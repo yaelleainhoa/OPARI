@@ -149,13 +149,14 @@
   
     
     } 
-
-  input[type = text]:hover + label{
-	    top: -130px;
-	    font-size: 1.2em;
-	    transition: all .3s;
-	      
-    }
+	
+	input[type="text"]:focus + label,
+	input[type = text]:hover + label{
+		top: -130px;
+		font-size: 1.2em;
+		transition: all .3s;
+		
+	}
 
   label{
     display: block;
