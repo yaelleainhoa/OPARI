@@ -1,0 +1,56 @@
+/* Mise en place de l'image */
+
+	.ecran {
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	#image {
+		box-shadow: 2px 2px 5px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;
+	}
+	
+
+	.resultat, .affichage_solution {	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		;}
+
+	.affichage_solution {
+		margin-top: 20px;
+		color: #000;
+		font-family: bold;
+		font-size: 100px;
+		font-family: Police8;
+		text-align: center;
+	}
+
+	.question {
+		color: black;
+		background-color: white;
+		filter: drop-shadow(0 0 0.75rem grey);
+		padding: 2em;
+		margin-left: 5%;
+		margin-right: 5%;
+
+	}
+
+
+
+/* Page précédente & Page suivante */
+
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	

@@ -1,0 +1,52 @@
+/* Affichage des questions */
+	.question, .reponse {
+		display: inline;
+		visibility: hidden;}
+
+	.question, .reponse, .propal {
+		font-family: Police1;
+	}
+
+	.question {
+		display: inline;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		
+	}
+
+	.propal {
+		color: black;
+	}
+
+	.questions {
+		margin-left: 20px;
+		margin-top: 20px;
+		margin-top: 20px;
+		font-family: Police6;
+		background-color: white;
+		filter: drop-shadow(0 0 0.75rem grey);
+		padding: 2em;
+		width: 70%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;}
+
+	.bloc {
+		margin-bottom: 60px;
+		font-size: x-large;
+		line-height: 40px;
+		}
+
+	input[type="button"]{
+		margin-left: 20px;
+		}
+
+	.bouton {
+		width: auto;
+		height: auto;
+		padding: 10px 10px;
+		font-size: large;
+		position:relative; 
+    	display:inline-block; 
+    	float:right;
+	}

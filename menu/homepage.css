@@ -1,0 +1,384 @@
+
+@font-face {
+    font-family: "Police1";
+    src: url('../polices/Police1.ttf');
+}
+
+@font-face {
+    font-family: "Police2";
+    src: url('../polices/Police2.ttf');
+}
+
+@font-face {
+    font-family: "Police3";
+    src: url('../polices/Police3.ttf');
+}
+
+@font-face {
+    font-family: "Police4";
+    src: url('../polices/Police4.ttf');
+}
+
+@font-face {
+    font-family: "Police5";
+    src: url('../polices/Police5.ttf');
+}
+
+@font-face {
+    font-family: "Police8";
+    src: url('../polices/Police8.otf');
+}
+
+@font-face {
+    font-family: "Police9";
+    src: url('../polices/Police9.ttf');
+}
+
+
+html {
+    background-image: linear-gradient(to right, #e3a627, #e3802e);
+  }
+
+
+
+
+  * Images */
+
+  #images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #image1, #image2 {
+      margin-top: 20px;
+      box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  }
+
+  #image1 {
+      margin-right: 50px;
+  }
+
+  #image2 {
+      margin-left: 50px;
+  }
+
+/*Center Box*/
+  .centerBox
+      {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      }
+
+  .Box1
+      {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      }
+
+  .Box2
+      {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      }
+
+  .Box3
+      {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      }
+
+/* Style des boutons */	
+
+  .jeu
+      {
+      height: 250px;
+      width: 390px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #7E121D;
+      font-family:Police4;
+      position: relative;
+      border-radius: 70% 50% 70% 50%;
+      }
+
+  .jeu:after
+      {
+      position: absolute;
+      top:0;
+      left: 0;
+      right:0;
+      bottom: 0;
+      background: #a29ca9; 
+      border-radius: 70% 70% 70% 70%;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a29ca9', endColorstr='#95909b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      content: '';
+      opacity: 0;
+          -webkit-transition: opacity 0.9s ease 0s; 
+      }
+
+  .jeu:hover:after
+      {
+      opacity: 0.4;
+      /**/
+      }
+
+  .jeu h1{
+      color:white;
+      font-size: 50px;
+      letter-spacing: 2px;
+      -webkit-transition: all 0.15s ease 0s; 
+      position: relative;
+      z-index: 10;
+  }
+
+  .jeu:hover h1{
+      transform: translateY(-10px);
+  }
+
+  .jeu button{
+      position: absolute;
+      transform: translatey(60px);
+      -webkit-appearance: none;
+      border: none;
+      background: none;
+      color:white;
+      width: 250px;
+      height:50px;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      z-index: 10;
+  }
+
+  .jeu button span{
+      display: block;
+      position: relative;
+      line-height: 40px;
+      font-size:small;
+      height: 40px;
+      font-family: 'Courier New', Courier, monospace;
+      cursor: pointer;
+  }
+
+  .jeu button > span:after{
+      content:'';
+      position: absolute;
+      top:0;
+      left: 50%;
+      width: 20px;
+      height: 0;
+      
+      border: 1px solid white;
+      border-left: none;
+      border-bottom: none;
+      
+          transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .jeu:hover button > span:after{
+      width: calc(50% - 1px);
+      height: calc(100% - 2px);
+      transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+
+  .jeu button > span:before{
+      content:'';
+      position: absolute;
+      top:0;
+      right: 50%;
+      width: 20px;
+      height: 0;
+      
+      border: 1px solid white;
+      border-right: none;
+      border-bottom: none;
+      
+          transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+  }
+
+  .jeu:hover button > span:before{
+      width: calc(50% - 1px);
+      height: calc(100% - 2px);
+      transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+  }
+
+  .jeu button > span > span:before{
+      content:'';
+      position: absolute;
+      bottom:0;
+      right: 0%;
+      width: 1px;
+      height: 1px;
+      opacity: 0;	
+  }
+
+  .jeu:hover button > span > span:before{
+      opacity: 1;
+      border-bottom: 1px solid white;
+      width: calc(50%);
+      height: 1px;
+      transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+
+  .jeu button > span > span:after{
+      content:'';
+      position: absolute;
+      bottom:0;
+      left: 0%;
+      width: 1px;
+      height: 1px;
+      opacity: 0;	
+  }
+
+  .jeu:hover button > span > span:after{
+      opacity: 1;
+      border-bottom: 1px solid white;
+      width: calc(50%);
+      height: 1px;
+      transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+  }
+
+  .jeu button > span > span > span{
+      transition: color 0.15s ease-out 0.3s;
+      color: transparent;
+  }
+
+  .jeu:hover button > span > span > span{
+      color:white;
+      /**/
+  }
+
+  .jeu button > span > span > span:after{
+      position: absolute;
+      top:0;left:0;right:0;bottom:0;
+      color:#1f2e4d;
+      content: attr(data-attr-span);
+      width: 0%;
+      height: 100%;
+      background:white;
+      white-space: nowrap;
+      text-align: center;
+      margin: auto;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      transition: width 0.2s;
+  }
+
+  .jeu button:hover > span > span > span:after{
+      width: 100%;
+      /**/
+  }
+
+  #banniere {
+      color: white;
+      font-size: x-large;
+      text-align: center;
+      height: 2em; 
+      line-height: 2em; 
+      white-space: nowrap; }
+
+  .type_jeux
+      {
+      padding-top: 20px;
+      text-align: center;
+      color: white; 
+      font-size: xx-large;
+      }
+
+/* Enonce des règles */
+.enonce_regles {
+    text-align: left;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-family: Police4;
+    font-size: 20px;
+    font-weight: bold;    
+    line-height: 140%;
+
+
+}
+
+.regles {
+    font-size: 40px;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    font-family: Police4;
+    line-height: 140%;
+    padding-bottom: 2%;
+
+}
+
+/* Marge inférieure */
+
+.marge_inf {
+    height: 1000px;
+}
+
+/* Boutons */
+.bouton {
+        font-size: x-large;
+        border: 0;
+        padding: 20px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #668c6f;
+        border-radius: 5px;
+        border: none;
+        transition: all 0.4s ease 0s;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+
+    .bouton:hover {
+        background: radial-gradient(#668c6f, #213c18);
+        letter-spacing: 1px;
+        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+        }
+
+        /* Barre de navigation */
+
+	img {
+		cursor: pointer;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	.nav_bar {
+		display: flex;
+		align-content: center;
+		align-items: center;
+		height: 50px;
+		margin-bottom: 20px;
+		box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+		
+	}
+
+	.nav_bar > button {
+		background: none;
+		border: none;
+		color: white;
+		margin-left:auto ;
+		margin-right:auto;
+	}

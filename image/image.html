@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Qu'est-ce ?</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../menu/nav_bar.css">
+  <link rel="stylesheet" href="../menu/homepage.css">
+  <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+<nav class="nav_bar">
+	<button onclick="window.location.href='../frise/frise.html'">
+		<img src="../img/left-arrow.png" height="100px" width="100px">
+	</button>
+	<button onclick="window.location.href='../menu/homepage.html'">
+		<img src="../img/home.png" height="50px" width="50px" >
+	</button>
+	<button onclick="window.location.href='../vf/vf.html'">
+		<img src="../img/right-arrow.png" height="100px" width="100px">
+	</button>
+</nav>
+
+<div class="question">
+	
+	<div class="navigation">
+		<input type="button" class="bouton" value="<< Question précédente" onclick="precedent()" id="previous"></button>
+		<input type="button" class="bouton" value="Question suivante >>" id = "previous" onclick="suivant()" id="next"></button>
+	</div>
+	
+
+	<div class="regles"> Qui peut-on voir sur l'image ? Pour avoir la réponse, passe à l'image suivante.</div>
+	<div class="ecran">
+		<img src="" id="image"> 
+	</div>
+</div>
+
+<div class="marge_inf"></div>  
+</body>
+	<script src="image.js"></script>
+</html>

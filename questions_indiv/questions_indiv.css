@@ -1,0 +1,130 @@
+/* Enonce des règles */
+
+	.texte{
+		margin-top: 30px;
+		text-align: left;
+		margin-left: 10px;
+		font-weight: bolder;
+		font-size: xx-large;
+	}
+
+/* Afficher la question et la réponse*/
+
+	.bouton {
+		margin-top: 20px;
+	}
+
+	.question, .reponse{
+		color: #000;
+		font-size: x-large;
+		text-align: center;
+
+	}
+
+	.texte {
+		color: #000;
+		font-size: xx-large;
+		text-align: center;
+	}
+
+	.contenu_reponse {
+		margin-top: 10px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		margin-bottom: 5px;}
+
+	.question_reponse {
+		background-color: white;
+		filter: drop-shadow(0 0 0.75rem grey);
+		padding: 5px;
+		font-family: Police2;
+		width: 50%;		
+		line-height: normal;
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+
+
+
+/* Couleur des cases par joueur */
+
+	.joueur{
+		margin-top: 0px;
+		color: black;
+		font-size: x-large;
+		margin-bottom: 20px;
+		width: 20%;
+		padding: 10px 0px;
+		margin-right: 2%;
+		margin-left: 2%;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px grey;
+		outline: none;
+		padding: 10px;
+		font-family: Police2;
+		
+	}
+
+	.joueurs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		
+	}
+
+	.cellule {
+		font-family: Police4;
+		font-size: 20px;
+	}
+
+ 	#papa {
+		background-color: #CB4483;}
+
+	#sam {
+		background-color: #F6E472;}
+
+	#maman {
+		background-color: #FCAE86;}
+	
+	#max {
+		background-color: #9CCBC0;}
+
+	#aitor {
+		background-color: #92A0CF;}
+
+	#zaz {
+		background-color: #67A580;}
+
+
+	#id2, #id7, #id12, #id20 {
+		background-color: #CB4483;
+		color: white;
+	}
+
+	#id3, #id5,#id13, #id14 {
+		background-color: #F6E472;
+		color: white;
+	}
+
+	#id1, #id6, #id11, #id18 {
+		background-color: #FCAE86;
+		color: white;
+	}
+
+
+	#id8, #id9, #id10, #id15 {
+		background-color: #92A0CF;
+		color: white;
+	}
+
+	#id4, #id16, #id17, #id19 {
+		background-color: #67A580;
+		color: white;
+	}

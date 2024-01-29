@@ -1,0 +1,91 @@
+/* Thèmes*/
+
+	.theme{
+		margin-top: 20px;
+		color: black;
+		font-size: x-large;
+		margin-bottom: 20px;
+		width: 20%;
+		padding: 10px 0px;
+		margin-right: 2%;
+		margin-left: 2%;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px grey;
+		outline: none;
+		padding: 10px;
+		font-family: Police2;
+	}
+
+	.enonce_regles {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+
+/* Boutons */
+	.bouton_reponse {
+		margin-top: 20px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		align-content: center;}
+		
+	.cellule {
+		font-family: Police4;
+		font-size: 60px;
+	}
+
+	.contenu_reponse {
+		color: #000;
+		font-size: x-large;
+		line-height: 2em;
+		text-align: center;
+		background-color: white;
+		filter: drop-shadow(0 0 0.75rem grey);
+		padding: 5px;
+		font-family: Police2;
+		width: 70%;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/* Couleur des cases par joueur */
+
+	#papa, #id3, #id8, #id12, #id4 {
+		background-color: #CB4483;
+	}
+
+	#sam, #id6, #id7, #id15, #id10{
+		background-color: #fdf1b8;
+		
+	}
+
+	#maman, #id1, #id2, #id13, #id18  {
+		background-color: #FCAE86;
+	}
+
+	#aitor, #id5, #id9, #id11, #id19 {
+		background-color: #92A0CF;
+	}
+
+	#zaz, #id14, #id16, #id17, #id20 {
+		background-color: #67A580;
+	}
+
+/* Question & Réponse */
+
+	.texte{
+		margin-top: 30px;
+		font-weight: bolder;
+		font-size: xx-large;
+	}
+
+.bloc_themes {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

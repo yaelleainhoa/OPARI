@@ -1,0 +1,68 @@
+/* Mise en place de l'image */
+
+	.ecran {
+		margin-bottom: 20px;
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	#image {
+		width: 50%;
+	}
+
+	.resultat, .affichage_solution {	display: flex;
+		align-items: center;
+		justify-content: center;}
+
+	.affichage_solution {
+		margin-top: 20px;
+		font-size: large;
+		font-family: "Bold";
+		color: #fff;
+	}
+
+	.ecran > img {
+		filter: blur(1em);
+		transition: .3s ease-in-out;
+	}
+
+	img:hover {
+	
+	filter: blur(0.5em);
+	}
+
+	img:active {
+	
+	filter: blur(0em);
+	}
+
+
+
+/* Boutons */
+	.bouton {
+		margin-top: 50px;
+	}
+
+
+	.affichage_solution {
+		font-family: Police7;
+		color: black;
+		font-size: 100px;
+		
+	}
+
+/* Page précédente & Page suivante */
+
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	#solution {
+		font-family: Police1;
+	}

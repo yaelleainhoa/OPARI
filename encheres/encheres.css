@@ -1,0 +1,149 @@
+/* Boutons */
+
+	.bloc {
+		align-items: center;
+		align-content: center;
+		margin-top: 50px;
+		
+	}
+
+	.navigation {
+		display: flex;
+		align-items: center;
+		align-content: center;
+	}
+/* Affichage du nombre de questions manquantes */
+
+	#decompte {
+		margin-bottom: 30px;
+	}
+
+/* Bloc de réponse */
+	
+	#question {
+		color: #black;
+		font-family: Police1;
+	}
+
+	.contenu > p {
+		font-size: large;
+		line-height: 50px;
+		font-family: Police6;
+		color: black;
+	}
+	
+	.classe_question {
+		font-family: Police5;
+		
+	}
+
+	
+
+	.contenu {
+		margin-top: 20px;
+		font-family: Police6;
+		color: black;
+		background-color: white;
+		filter: drop-shadow(0 0 0.75rem grey);
+		padding: 2em;
+		width: 70%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+
+	.blocrouge
+	{
+		width: 100%;
+	}
+
+
+
+	span {
+		background-color: black;
+	}
+
+	.id {
+		background-color: white;
+	}
+
+	.afficher {
+		background-color: transparent;
+	}
+
+
+	#liste_reponse {
+		padding: 10px;
+		text-align: center;
+		font-family: Police1;
+		box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+		margin-bottom: 30px;
+	}
+
+	#end {
+		text-align: center;
+		font-family: "Bold";
+		font-family: Police1;
+	}
+
+	p {
+		font-size: xx-large;
+		text-align: center;
+		font-family: "QuicksandBold";
+		margin-top: 50px;
+	}
+/* L'endroit où on fait ses propositions */
+
+
+	.input{
+		width: 90%;
+		margin: 0 auto;
+		font-size: 1.4em;
+		font-family: Police1;
+		}
+
+	input[type = text] {    
+	    width: 400px;
+	    height: 80px;  
+	    margin-top: 80px;
+	    font-size: 1.8em;    
+	    background-color: transparent;
+	    border: none;
+	    border-top: 3px solid #000;    
+	    border-bottom: 3px solid #000;
+	    outline: none;
+  
+    
+    } 
+
+  input[type = text]:hover + label{
+	    top: -130px;
+	    font-size: 1.2em;
+	    transition: all .3s;
+	      
+    }
+
+  label{
+    display: block;
+    position: relative;
+    top: -70px;
+    font-size: 1.8em;
+    cursor: text;
+    transition: all .3s;    
+  }
+
+
+/* Boutons */
+	.bouton {
+		margin-top: 20px;
+	}
+
+	
+
+	.bloc {
+		display: flex;
+		align-content: center;
+		align-items: center;
+	}

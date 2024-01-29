@@ -1,0 +1,102 @@
+
+
+/* Tableau */
+	table {
+		margin-top: 20px;
+		width: 60%;
+		vertical-align: center;
+		text-align: center;
+		font-size:50px;
+		margin-left: auto;
+		margin-right: auto;
+		font-family: Police2;
+		border: none;
+		border-spacing: 1rem 1rem;
+	
+
+	}
+
+	.nomjoueur {
+		font-family: Police4;
+	}
+
+	.limiter 
+		{
+			
+			font-family: Police2;
+
+	;}
+
+
+	.bouton {
+		font-family: Police2;
+	}
+
+
+	.cellule {
+		background-color: #c25f5f;
+		color: whitesmoke;
+		border: transparent 3px;
+		font-size: 50px;
+		margin-right: 20%;
+		margin-left: 20%;
+		font-weight: bolder;
+		box-shadow: 10px 5px 5px grey;
+		border-radius: 25% 10%;
+		width: 15%;
+	}
+
+	td {
+		background-color: #EFF4E6;
+		border-collapse: separate;
+		cursor: pointer;
+
+	}
+
+	td {
+		border: 1px solid rgb(190, 190, 190);
+	    padding: 20px;
+	}
+
+	td:hover {
+		background: transparent;}
+
+
+
+	.row {
+	  display: table-row;
+	  background: #fff;
+	  text-align: center;
+	  color:black;
+	  font-size:22px;
+
+	}
+
+	.row.header 
+		{
+	  color: #ffffff;
+	  background: #668c6f;
+	  font-size:x-large;
+		}
+
+/* Cellules */
+
+	.cellule_blanche {
+		background-color: transparent;
+		border: none;
+		}
+
+	.cellule_blanche:hover {
+		background-color: transparent;
+	}
+
+	.explication {
+		font-family: Police2;
+		margin-top: 5px;
+	}
+
+	.question {
+		font-family: Police5;
+		margin-bottom: 5px;
+		
+	}

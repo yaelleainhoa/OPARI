@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Qui est-ce ?</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../menu/nav_bar.css">
+  <link rel="stylesheet" href="../menu/homepage.css">
+  <link rel="stylesheet" href="deviner.css">
+</head>
+
+<body>
+<nav class="nav_bar">
+	<button onclick="window.location.href='../questions_a_theme/questions_a_theme.html'">
+		<img src="../img/left-arrow.png" height="100px" width="100px">
+	</button>
+	<button onclick="window.location.href='../menu/homepage.html'">
+		<img src="../img/home.png" height="50px" width="50px" >
+	</button>
+	<button onclick="window.location.href='../menu/homepage.html'">
+		<img src="../img/right-arrow.png" height="100px" width="100px">
+	</button>
+</nav>
+
+<div>
+	<div class="bloc">
+		<div class="navigation">
+			<input type="button" class="bouton" value="<< Question précédente" id ="previous"  onclick="precedent()" ></button>
+			<input type="button" class="bouton" value="Question suivante >>" id ="next" onclick="suivant()"></button>
+		</div>
+	</div>
+
+	<div class="enonce_regles"> Quel acteur/actrice ? (Un de ces premiers ou derniers films)</div>
+	<div class="ecran">
+		<img src="" id="image" classe="action"> 
+	</div>
+</div>
+
+	<div class="resultat">
+		<input type="button" class="bouton" value="Afficher la réponse" onclick="reponse()"></button>
+	</div>
+
+	<div class="affichage_solution">
+		<div id="solution"></div>
+	</div>
+
+<div class="marge_inf"></div>  
+</body>
+	<script src="deviner.js"></script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trouver l'intrus</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../menu/nav_bar.css">
+  <link rel="stylesheet" href="../menu/homepage.css">
+  <link rel="stylesheet" href="intrus.css">
+</head>
+
+<body>
+	<nav class="nav_bar">
+		<button onclick="window.location.href='../questions_indiv/questions_indiv.html'">
+			<img src="../img/left-arrow.png" height="100px" width="100px">
+		</button>
+		<button onclick="window.location.href='../menu/homepage.html'">
+			<img src="../img/home.png" height="50px" width="50px" >
+		</button>
+		<button onclick="window.location.href='../frise/frise.html'">
+			<img src="../img/right-arrow.png" height="100px" width="100px">
+		</button>
+	</nav>
+<p class="regles"> Les règles : </p>
+<p class="enonce_regles">Trouver l'intrus à chaque manche</p>
+
+<div class="manches">
+	<input type="button" class="bouton" id="manche0" value="Manche 0" onclick="selection_manche(this.id)"></button>
+	<input type="button" class="bouton" id="manche1" value="Manche 1" onclick="selection_manche(this.id)"></button>
+	<input type="button" class="bouton" id="manche2" value="Manche 2" onclick="selection_manche(this.id)"></button>
+	<input type="button" class="bouton" id="manche3" value="Manche 3" onclick="selection_manche(this.id)"></button>
+</div>
+
+<div class="tbl-header">
+	<table >
+		<thead>
+			<th id="nom_manche" class="colo"></th>
+		</thead>
+	</table>
+
+	<div class="tbl-content">
+		<table >
+			<tbody>
+				<tr>
+					<td id="0" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="1" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="2" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="3" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="4" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="5" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="6" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+				<tr>
+					<td id="7" class="colo" onclick="correct(this.id)"></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+</div>
+	<div class="marge_inf"></div>
+
+</body>
+	<script src="intrus.js"></script>
+</html>
