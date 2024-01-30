@@ -34,9 +34,19 @@
     src: url('../polices/Police9.ttf');
 }
 
+@font-face {
+    font-family: "Police10";
+    src: url('../polices/Police10.otf');
+}
+
+@font-face {
+    font-family: "Police11";
+    src: url('../polices/Police11.ttf');
+}
 
 html {
-    background-image: linear-gradient(to right, #e3a627, #e3802e);
+    background-image: linear-gradient(90deg, #ee2523 25%, #ffffff 25%, #ffffff 50%, #ee2523 50%, #ee2523 75%, #ffffff 75%, #ffffff 100%);
+    background-size: 200.00px 200.00px;
   }
 
 
@@ -100,15 +110,20 @@ html {
 
   .jeu
       {
-      height: 250px;
-      width: 390px;
+      height: 50vh;
+      width: 50vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #7E121D;
-      font-family:Police4;
+      /* background-color:  #303030; */
+      background-image: url("euskadi.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: Police10;
       position: relative;
       border-radius: 70% 50% 70% 50%;
+      
       }
 
   .jeu:after
@@ -134,12 +149,15 @@ html {
 
   .jeu h1{
       color:white;
-      font-size: 50px;
+      font-size: 30px;
       letter-spacing: 2px;
       -webkit-transition: all 0.15s ease 0s; 
       position: relative;
       z-index: 10;
   }
+
+
+
 
   .jeu:hover h1{
       transform: translateY(-10px);
@@ -167,7 +185,7 @@ html {
       line-height: 40px;
       font-size:small;
       height: 40px;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: Police11;
       cursor: pointer;
   }
 
@@ -305,7 +323,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    font-family: Police4;
+    font-family: Police10;
     font-size: 20px;
     font-weight: bold;    
     line-height: 140%;
@@ -321,7 +339,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
-    font-family: Police4;
+    font-family: Police10;
     line-height: 140%;
     padding-bottom: 2%;
 
@@ -382,3 +400,17 @@ html {
 		margin-left:auto ;
 		margin-right:auto;
 	}
+
+#left-arrow, #right-arrow {
+    width: 10vw;
+    margin-top:15vh;
+    margin-bottom: 5vh;
+    /* height: 10vh; */
+}
+
+
+#home-img {
+    width: 10vw;
+    margin-top:15vh;
+    margin-bottom: 10vh;
+}

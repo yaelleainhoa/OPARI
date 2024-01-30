@@ -9,7 +9,7 @@
 		font-size:50px;
 		margin-left: auto;
 		margin-right: auto;
-		font-family: Police2;
+		font-family: Police10;
 		border: none;
 		border-spacing: 1rem 1rem;
 	
@@ -17,19 +17,19 @@
 	}
 
 	.nomjoueur {
-		font-family: Police4;
+		font-family: Police10;
 	}
 
 	.limiter 
 		{
 			
-			font-family: Police2;
+			font-family: Police10;
 
 	;}
 
 
 	.bouton {
-		font-family: Police2;
+		font-family: Police10;
 	}
 
 
@@ -91,12 +91,12 @@
 	}
 
 	.explication {
-		font-family: Police2;
+		font-family: Police10;
 		margin-top: 5px;
 	}
 
 	.question {
-		font-family: Police5;
+		font-family: Police10;
 		margin-bottom: 5px;
 		
 	}

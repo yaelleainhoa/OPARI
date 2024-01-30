@@ -86,3 +86,4 @@ function Afficher_reponse(id) {
 	document.getElementById(que).style.color = "#ff8484";
 }
 ;
+

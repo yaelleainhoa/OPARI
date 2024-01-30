@@ -1,92 +1,97 @@
 var theme = [
-	"Qui n'est pas présent dans le jeu des post its ?",
-	"Quelle chanson n'est pas présente dans Nous finirons ensemble ?",
-	"Quelle phrase ne dit pas Canet dans le Making Of des Petits Mouchoirs?",
-	"Quelle phrase n'a jamais dit Max dans son jardin ?"
+	"L'intrus est le joueur de l'effectif actuel de l'Athletic Club qui n'est pas né en Biscaye.",
+	"L'intrus est le joueur de l'effectif actuel de l'Athletic Club qui est né en Navarre.",
+	"L'intrus est la course que Miguel Induráin n'a jamais gagnée.",
+	"L'intrus est la phrase qui n'est pas présente dans l'hymne de l'Athletic."
 	]
 
 var manche = [
-	/* Première manche */
-	"Bossu de Notre Dame",
-	"Brad Pitt",
-	"Brigitte Lahaie",
-	"Donald Trump",
-	"Joe le taxi",
-	"Marine Le Pen",
-	"Sue Ellen",
-	"Tour Montparnasse",
+	/* Première manche */ 
+	"Aitor Paredes", 
+	"Asier Villalibre", 
+	"Peru Nolaskoain", 
+	"Imanol García de Albéniz", 
+	"Iñaki Williams", 
+	"Iñigo Lekue", 
+	"Mikel Jauregizar", 
+	"Yeray Álvarez", 
+	
 	/* Deuxième manche */
-	"Girls just want to have fun / Cyndi Lauper",
-	"Talk to me / Yodélice",
-	"Toop Toop / Cassius",
-	"It's all over now, baby blue / Them",
-	"Not The Girl You Think You Are / Crowded House",
-	"Pennies From Heaven / Louis Prima",
-	"99 luftballons / Nena",
-	"Sauvetage Nino / M",
+	"Beñat Prados", 
+	"Dani García",
+	"Dani Vivian", 
+	"Gorka Guruzeta", 
+	"Iñigo Ruiz de Galarreta", 
+	"Julen Agirrezabala", 
+	"Malcom Adu Ares", 
+	"Mikel Vesga", 
+	
+	
 	/* Troisième manche */
-	"Il était depuis très longtemps dans ma tête.",
-	"J'avais envie qu'ils la connaissent cette maison, qu'ils ne la décrouvrent pas.",
-	"J'avais envie de montrer cette génération de mec enfant, qui sont les résultats de l'émancipation de la femme",
-	"Forcément entre les prises, l'ambiance elle s'arrête pas.",
-	"Très rapidement à l'écrire, en une semaine et demie (...) j'avoue tout le film.",
-	"Ça fait très longtemps que j'étais fan de films de potes.",
-	"C'est super construit, tu déplaces un truc c'est pas le même effet.",
-	"(En parlant de Max) il est lâche par moment mais en même temps c'est un mec responsable.",
+	"Clásica San Sebastián",
+	"Critérium del Dauphiné",
+	"Giro de Italia",
+	"Juegos Olimpicos",
+	"París-Niza",
+	"Tour de France",
+	"Volta a Cataluña",
+	"Vuelta al País Vasco",
+
 	/* Quatrième manche */
-	"Combien de fois je vous ai dit de ranger la tondeuse à gazon ?",
-	"Je la connais ma pelouse.",
-	"Vous vous foutez de ma gueule.",
-	"Vous pourriez en rien foutre de l'année, je ne le saurais même pas.",
-	"Je me demande pourquoi je vous paye.",
-	"Ça vous coûtait quoi de venir tondre avant ?",
-	"Max Cantara à l'appareil",
-	"Je viens 2 mois dans l'année.",]
+	"Maite zaitu erriak",
+	"Gaztedi gorri-zuria",
+	"Euskalerriaren erakusgarria",
+	"Zu zara nagusia",
+	"Neuria izango zen",
+	"Aurrera gure gaztiak",
+	"Aupa mutillak",
+	"Gora beti Euskalerria",]
 
 var infos = [
 	/* Première manche */
-	" - BOOOM",
-	" - Vincent",
-	" - Sabine",
-	" - Max",
-	" - Antoine",
-	" - Eric",
-	" - Marie",
-	" - Isa",
+	" - Bilbao",
+	" - Guernica y Luno",
+	" - Zumaya",
+	" - Abanto y Ciérvana",
+	" - Bilbao",
+	" - Bilbao",
+	" - Bermeo",
+	" - Baracaldo",
 	/* Deuxième manche */
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
+	" - Pamplona",
+	" - Zumárraga",
+	" - Vitoria",
+	" - Donostia" ,
+	" - Éibar",
+	" - Donostia",
+	" - Bilbao",
+	" - Vitoria",
 	/* Troisième manche */
-	"Jean-Claude Cotillard",
-	"Marion Cotillard",
-	"Jean Dujardin",
-	"Gwendoline Hamon",
-	"Benoît Magimel",
-	"C'est Eliott Boulay",
-	"Yodelice",
-	"François Cluzet",
+	" - En 1990",
+	" - En 1995 & 1996",
+	" - En 1992 & 1993",
+	" - En 1996",
+	" - En 1989 & 1990",
+	" - En 1991, 1992, 1993, 1994 & 1995",
+	" - En 1988",
+	" - 22.º en 1986, 3.º en 1990 & 54.º en 1993",
+
 	/* Quatrième manche */
-	" - C'est bien évidemment le tuyau d'arrosage qui n'est pas rangé !",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
-	"",
+	" - Te quiere el pueblo ",
+	" - La juventud rojiblanca",
+	" - Representa a Euskal Herria",
+	" - Eres el mejor",
+	" - Hegoak (seria mio)",
+	" - Aurrera gure gaztiak",
+	" - Adelante, jóvenes",
+	" - Siempre defenderemos Euskal Herria",
 	]
 
 var incorrect = [
+	2,
 	0,
-	1,
-	6,
-	0]
+	7,
+	4]
 
 var id  ="";
 
@@ -123,6 +128,6 @@ function correct(clicked_id)
 			Elt.style.width = "500px";
 		}
 
-		document.getElementById(clicked_id).textContent += infos[j + clicked_id];
+		document.getElementById(clicked_id).textContent = manche[j + clicked_id] + infos[j + clicked_id];
 	
 }

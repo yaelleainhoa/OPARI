@@ -12,124 +12,32 @@
 <body>
 <nav class="nav_bar">
 	<button onclick="window.location.href='../encheres/encheres.html'">
-		<img src="../img/left-arrow.png" height="100px" width="100px">
+		<img src="../img/left-arrow.png" id="left-arrow">
 	</button>
 	<button onclick="window.location.href='../menu/homepage.html'">
-		<img src="../img/home.png" height="50px" width="50px" >
+		<img src="../img/home.png" id="home-img" >
 	</button>
 	<button onclick="window.location.href='../questions_indiv/questions_indiv.html'">
-		<img src="../img/right-arrow.png" height="100px" width="100px">
+		<img src="../img/right-arrow.png" id="right-arrow">
 	</button>
 </nav>
 
-<div class="regles">
-	<p class="regles"> Les règles : Associer chaque personnage avec un acteur</p>
-	<p class="enonce_regles">Première manche : Facile</p>
-	<p class="enonce_regles">Deuxième manche : Moyen</p>
-	<p class="enonce_regles">Troisième manche : Difficile - Associer le nom du personnage avec la description</p>
+
+<div id="container2">
+	<select name="Manche" id="manche-select">
+	</select>
 </div>
 
-<!-- Tableau -->
+<div id="container">
+	<!-- <button name="Niveau 1" id="niveau-1"></select>
+	<button name="Niveau 2" id="niveau-2"></select>
+	<button name="Niveau 3" id="niveau-3"></select>
+	<button name="Niveau 4" id="niveau-4"></select>
+	<button name="Niveau 5" id="niveau-5"></select> -->
 
-	<div class="limiter">
-		<div class="container-table100">
-			<div class="wrap-table100">
-					<div class="table">
-
-						<div class="row header">
-							<div class="cell" id="date">
-								Personnage
-							</div>
-							<div class="cell" id="evenement">
-								Acteur
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="date0">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="evt0">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="date1">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="evt1">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="date2">
-								
-							</div>
-							<div class="cell" data-title="Evenement"id="evt2">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date"id="date3">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="evt3">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="date4">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="evt4">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="date5">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="evt5">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date"id="date6">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="evt6">
-								
-							</div>
-						</div>
-
-					</div>
-			</div>
-		</div>
-	</div>
-
-<!-- Boutons -->
-	<div id="ensemble_boutons">
-		<input id="bouton1" type="button" class="bouton" value="Manche 1" onclick="Afficher(enonce_1, date_1)"></button>
-
-		<input id="bouton2" type="button" class="bouton" value="Manche 2" onclick="Afficher(enonce_2, date_2)"></button>
-
-		<input id="bouton3" type="button" class="bouton" value="Manche 3" onclick="Afficher(enonce_3, date_3)"></button>
-
-		<input id="bouton4" type="button" class="bouton" value="Réponses 1" onclick="Afficher(reponse_1, date_1)"></button>
-
-		<input id="bouton5" type="button" class="bouton" value="Réponses 2" onclick="Afficher(reponse_2, date_2)"></button>
-
-		<input id="bouton6" type="button" class="bouton" value="Réponses 3" onclick="Afficher(reponse_3, date_3)"></button>
-
-	</div>
-
-	<div class="marge_inf"></div>
+		
+</div>
+<div class="marge_inf"></div>
  
 </body>
 	<script src="jeu_annees.js"></script>
