@@ -25,22 +25,20 @@
 </nav>
 
 <p class="regles"> Les règles : </p>
-<p class="enonce_regles">Deviner la page Wikipedia ! (Il n'y a qu'une manche, trop long à faire déso......)</p>
+<p class="enonce_regles">Deviner la page Wikipedia !</p>
 <div class="navigation">
-	<input type="button" class="bouton" id="bouton_affichage" value="Commencer le jeu !"></button>
+	<div class="selector">
+		<select id="select"></select>
+	</div>
 </div>
 
 <div class="contenu">
-	<div id="blocscore">
-		<div class = "score" id="total"></div>
-		<div class = "score" id="actuel"></div>
-	</div>	
 	<div class="input">
 		<div class="blocrouge">
 			<input type="text" name="proposition" id="prop">
 			<label for="prop"> Mot à ajouter </label>	
-			<div id="resume"></div>
-	</div>
+			<div id="resumes"></div>
+		</div>
 	<div class="end" id="end"></div>
 </div>
 <div class="navigation">
