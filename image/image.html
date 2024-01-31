@@ -22,17 +22,30 @@
 	</button>
 </nav>
 
-<div class="question">
-	
-	<div class="navigation">
-		<input type="button" class="bouton" value="<< Question précédente" onclick="precedent()" id="previous"></button>
-		<input type="button" class="bouton" value="Question suivante >>" id = "previous" onclick="suivant()" id="next"></button>
-	</div>
-	
+<div id="container">
+	<div class="center">
+	  	<button class="btn avant" id="previous" onclick="precedent()">
+			<span>Précédent<span>
+		</button>
 
-	<div class="regles"> Qui peut-on voir sur l'image ? Pour avoir la réponse, passe à l'image suivante.</div>
-	<div class="ecran">
-		<img src="" id="image"> 
+		<button class="btn apres" id="next" onclick="suivant()">
+			<span>Suivant</span>
+		</button>
+	</div>
+</div>
+
+
+	<div id = "bloc_image">
+		<img src="../screen/cap00.png" id="image">
+	</div>
+</div>
+
+
+<div id="containerreponse">
+	<div class="center">
+	  	<button class="btns reponse" id="solution" onclick="reponse()">
+			<span id="affichage_reponse">Réponse<span>
+		</button>
 	</div>
 </div>
 
