@@ -2,8 +2,7 @@
 
 /* Tableau */
 	table {
-		margin-top: 20px;
-		width: 60%;
+		width: 80%;
 		vertical-align: center;
 		text-align: center;
 		font-size:50px;
@@ -33,7 +32,7 @@
 	}
 
 
-	.cellule {
+	/* .cellule {
 		background-color: #c25f5f;
 		color: whitesmoke;
 		border: transparent 3px;
@@ -44,7 +43,7 @@
 		box-shadow: 10px 5px 5px grey;
 		border-radius: 25% 10%;
 		width: 15%;
-	}
+	} */
 
 	td {
 		background-color: #EFF4E6;
@@ -59,7 +58,9 @@
 	}
 
 	td:hover {
-		background: transparent;}
+		background: #763538;
+		color: white;
+		transition: 0.5s;}
 
 
 

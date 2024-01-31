@@ -1,9 +1,9 @@
 /* Boutons */
 
+
 	.bloc {
 		align-items: center;
 		align-content: center;
-		margin-top: 50px;
 		
 	}
 
@@ -15,9 +15,7 @@
 	}
 /* Affichage du nombre de questions manquantes */
 
-	#decompte {
-		margin-bottom: 30px;
-	}
+	
 
 /* Bloc de réponse */
 	
@@ -41,7 +39,7 @@
 	
 
 	.contenu {
-		margin-top: 20px;
+		margin-top: 1vh;
 		font-family: Police6;
 		color: black;
 		background-color: white;
@@ -100,7 +98,7 @@
 		text-align: center;
 		font-family: Police1;
 		box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-		margin-bottom: 30px;
+		
 	}
 
 	#end {
@@ -108,13 +106,13 @@
 		font-family: "Bold";
 		font-family: Police1;
 	}
-
+/* 
 	p {
 		font-size: xx-large;
 		text-align: center;
 		font-family: "QuicksandBold";
 		margin-top: 50px;
-	}
+	} */
 /* L'endroit où on fait ses propositions */
 
 
@@ -128,7 +126,7 @@
 	input[type = text] {    
 	    width: 400px;
 	    height: 80px;  
-	    margin-top: 80px;
+	    margin-top: 2vh;
 	    font-size: 1.8em;    
 	    background-color: transparent;
 	    border: none;
@@ -159,7 +157,7 @@
 
 /* Boutons */
 	.bouton {
-		margin-top: 20px;
+		margin-top: 1vh;
 	}
 
 	

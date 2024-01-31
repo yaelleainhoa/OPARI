@@ -22,15 +22,23 @@
 		  </button>
 	  </nav>
 
-<p class="regles"> Les règles : </p>
-<p class="enonce_regles">Questions sur le film <b>Les Petits Mouchoirs</b></p>
-
 <div class="joueurs">
-	<input type="button" class="joueur" id="papa" value="Phrases cultes"></button>
-	<input type="button" class="joueur" id="maman" value="International"></button>
-	<input type="button" class="joueur" id="sam" value="Cluzet the best"></button>
-	<input type="button" class="joueur" id="aitor" value="Lafitte cette légende"></button>
-	<input type="button" class="joueur" id="zaz" value="Enfants"></button>
+	<button class="btn joueur" id="papa">
+		<span>Tous</span>
+	</button>
+	<button class="btn joueur" id="maman">
+		<span>Amatxo</span>
+	</button>
+	<button class="btn joueur" id="sam">
+		<span>Sam</span>
+	</button>
+	<button class="btn joueur" id="aitor">
+		<span>Aitor</span>
+	</button>
+	<button class="btn joueur" id="zaz">
+		<span>Yaëlle</span>
+	</button>
+
 </div>
 
 <table class="tableau">
@@ -40,10 +48,6 @@
 		<td class="cellule" id="3" onclick="myFunction(this.id)">3</td>	
 		<td class="cellule" id="4" onclick="myFunction(this.id)">4</td>	
 		<td class="cellule" id="5" onclick="myFunction(this.id)">5</td>
-	</tr>
-
-	<tr>
-		
 		<td class="cellule" id="6" onclick="myFunction(this.id)">6</td>
 		<td class="cellule" id="7" onclick="myFunction(this.id)">7</td>
 		<td class="cellule" id="8" onclick="myFunction(this.id)">8</td>
@@ -52,15 +56,12 @@
 	</tr>
 
 	<tr>
-		
+	
 		<td class="cellule" id="11" onclick="myFunction(this.id)">11</td>
 		<td class="cellule" id="12" onclick="myFunction(this.id)">12</td>
 		<td class="cellule" id="13" onclick="myFunction(this.id)">13</td>
 		<td class="cellule" id="14" onclick="myFunction(this.id)">14</td>
-		<td class="cellule" id="15" onclick="myFunction(this.id)">15</td>
-		
-	</tr>
-	<tr>	
+		<td class="cellule" id="15" onclick="myFunction(this.id)">15</td>	
 		<td class="cellule" id="16" onclick="myFunction(this.id)">16</td>
 		<td class="cellule" id="17" onclick="myFunction(this.id)">17</td>
 		<td class="cellule" id="18" onclick="myFunction(this.id)">18</td>
@@ -70,16 +71,16 @@
 
 </table>
 
-<div class="contenu_reponse">
-	<input type="button" class="bouton" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
+<div class ="contenu_reponse">
+	<button class="btn bouton_reponse" value="Afficher la réponse" onclick="Afficher_reponse(this.id)">
+		<span>Afficher la réponse 1</span>
+	</button>
 </div>
 
 <div class="question_reponse">
-	<p id="textequestion" class="texte" style="color:#c25f5f"> Question </p>
 	<p id="question" class="question"> </p>
-	<p class="texte" style="color:#c25f5f"> Réponse </p>
-	<p id="reponse" class="reponse" style="color:#668c6f"> </p>
 	<p id="masquer" class="masquer"> </p>
+	<p id="reponse" class="reponse"> </p>
 </div>
 
 <div class="marge_inf"></div>

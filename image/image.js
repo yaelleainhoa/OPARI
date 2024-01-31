@@ -11,7 +11,6 @@ var images = [
 	"../screen/cap09.png",
 	"../screen/cap10.png",
 	"../screen/cap11.png",
-	"../screen/cap12.png",
 	"../screen/cap13.png",
 	"../screen/cap14.png",
 	"../screen/cap15.png",
@@ -28,6 +27,28 @@ var images = [
 	"../screen/cap26.png",
 	"../screen/theend.png"]
 
+var reponses = [
+	"",
+	"Donde actualmente se ubica el edificio de El Corte Inglés, en el Ensanche",
+	"Plaza de Merindades, 1950",
+	"Antiguo Teatro Gayarre",
+	"Avenida de Carlos III a la altura de la Plaza del Castillo.",
+	"Paseo Sarasate",
+	"Etang aux canards où se trouve actuellement l'hôtel 3 Reyes",
+	"",
+	"14/04/1931 - Público concentrado en la plaza consistorial celebrando la proclamación de la República.",
+	"1966",
+	"1971",
+	"1912",
+	"",
+	"Lille (1870)",
+	"Madrid (1846)",
+	"Ascq (1950)",
+	"Donosti (1905)",
+	"Guernica (1937)",
+	"New York (1941)"
+]
+
 
 /* Initialisation de la page*/
 	var id = 0;
@@ -37,17 +58,12 @@ var images = [
 
 	function raz() {
 		document.getElementById("image").setAttribute("src", images[id]) ;
-		document.getElementById("solution").textContent = "";
-		if (id === 0) {
-			document.getElementById("previous").style.backgroundColor = "transparent";
-			document.getElementById("previous").style.color = "transparent";}
-		else {
-			document.getElementById("previous").style.color = "#fff";}
-		if(id === titres.length - 1) {
-			document.getElementById("next").style.backgroundColor = "transparent";
-			document.getElementById("next").style.color = "transparent";}
-		else {
-			document.getElementById("next").style.color = "#fff";}
+		console.log(images[id]);
+		document.getElementById("solution").textContent = "Réponse";
+		document.getElementById("solution").style.fontFamily = "Police10" ;
+		document.getElementById("solution").style.fontSize = "30px" ;
+		document.getElementById("solution").style.paddingBottom = "10px" ;
+		document.getElementById("solution").style.paddingTop = "10px" ;
 	}
 	function precedent() {
 		id--;
@@ -57,4 +73,12 @@ var images = [
 	function suivant() {
 		id++;
 		raz();
+	}
+
+	function reponse() {
+		document.getElementById("solution").textContent = reponses[id] ;
+		document.getElementById("solution").style.fontFamily = "Police10" ;
+		document.getElementById("solution").style.paddingBottom = "10px" ;
+		document.getElementById("solution").style.paddingTop = "10px" ;
+
 	}
