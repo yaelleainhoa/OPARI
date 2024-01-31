@@ -59,7 +59,7 @@
 	}
 
 	td:hover {
-		background: transparent;}
+		background: white;}
 
 
 
@@ -82,12 +82,12 @@
 /* Cellules */
 
 	.cellule_blanche {
-		background-color: transparent;
+		background-color: white;
 		border: none;
 		}
 
 	.cellule_blanche:hover {
-		background-color: transparent;
+		background-color: white;
 	}
 
 	.explication {
