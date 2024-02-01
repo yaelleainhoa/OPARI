@@ -9,8 +9,8 @@ table{
     }
 
 .bouton{
-    width: 140px;
-	height: 40px;
+    width: 180px;
+	height: 70px;
 	cursor: pointer;
 	background: transparent;
 	border: 2px solid black;
@@ -18,7 +18,7 @@ table{
 	border-radius: 50% 20% / 10% 40%;
 	outline: none;
 	transition: 1s ease-in-out;
-    font-size:medium;
+    font-size:large;
     padding:0;
 }
 
