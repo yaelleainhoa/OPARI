@@ -3,7 +3,7 @@ var questions = [
 	"Dans la saison actuelle de la Liga, le club le plus au sud est Cadix CF.",
 	"Dans la saison actuelle de la Liga, le club le plus à l'ouest est Celta de Vigo.",
 	"Dans la saison actuelle de la Liga, la communauté autonome la plus représentée est la communauté de Madrid.",
-	"Dans la siason actuelle de la Liga, 6 clubs sont en Liga depuis le XXe siècle..",
+	"Dans la saison actuelle de la Liga, 6 clubs sont en Liga depuis le XXe siècle..",
 	/* Question Amatxo*/
 	"Dans la saison actuelle de l'Euroligue, le club le plus au nord est l'ALBA Berlin.",
 	"Dans la saison actuelle de l'Euroligue, 3 villes accueillent 2 clubs (hormis Tel Aviv).",
@@ -11,8 +11,8 @@ var questions = [
 	"Dans la saison actuelle de l'Euroligue, il y a autant de joueurs espagnols dans l'effectif du Barça et du Real.",
 	/* Question Samuel*/
 	"Lors de la coupe du monde de basket 2019, la finale a eu lieu à Pekin.",
-	"Lors de la finale de la coupe du monde de basket 2019, le meilleur marqueur était Rciky Rubio.",
-	"Lors de la coupe du monde de basket 2019, les États Unis onr la meilleure moyenne de points marqués par match.",
+	"Lors de la finale de la coupe du monde de basket 2019, le meilleur marqueur était Ricky Rubio.",
+	"Lors de la coupe du monde de basket 2019, les États Unis ont la meilleure moyenne de points marqués par match.",
 	"Lors de la coupe du monde de basket 2019, Luis Scola finit dans le meilleur 5 de la compétition.",
 	/* Question Aitor*/
 	"Lors de la saison NBA 2022-2023, Jokic a fait 28 triples doubles.",
@@ -24,7 +24,7 @@ var questions = [
 
 var reponses = [
 	"Faux", /* Question Aita*/
-	"Vrai",
+	"Faux",
 	"Faux",
 	"Faux",
 	
@@ -49,14 +49,14 @@ var reponses = [
 var explications = [
 	/* Question  Aitatxo*/
 	"C'est UD Las Palmas.",
-	"",
+	"C'est UD Las Palmas.",
 	"C'est l'Andalousie avec 5 clubs - Madrid (4).",
 	"4 - Real Madrid, FC Barcelone, Athletic Club et Valence CF.",
 	/* Question Samuel */
 	"Žalgiris Kaunas.", 
 	"Istanbul, Athènes et Belgrade.",
 	"Le Partizan et l'Étoile Rouge à la Štark Arena.",
-	"6 dans l'effectif du Barça et 7 dans celui du Real.",
+	"6 dans l'effectif du Barça et 7 dans celui du Real (sauf si Rubio a signé depuis).",
 	/* Question Samuel */
 	"", 
 	"Gabriel Deck a marqué 24 points, 20 pour Ricky.",
