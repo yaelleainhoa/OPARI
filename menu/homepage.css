@@ -358,12 +358,6 @@ html {
         
     }
 
-    .bouton:hover {
-        background: radial-gradient(#668c6f, #213c18);
-        letter-spacing: 1px;
-        box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-        transition: all 0.4s ease 0s;
-        }
 
         /* Barre de navigation */
 

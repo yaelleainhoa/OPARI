@@ -1,11 +1,4 @@
-/* Boutons */
-
-
-	.bloc {
-		align-items: center;
-		align-content: center;
-		
-	}
+/* Sélection de la manche */
 
 	.navigation {
 		display: flex;
@@ -13,157 +6,116 @@
 		align-content: center;
 		flex-direction:column;
 	}
-/* Affichage du nombre de questions manquantes */
-
-	
 
 /* Bloc de réponse */
-	
-	#question {
-		color: #black;
-		font-family: Police1;
-	}
 
-	.contenu > p {
-		font-size: large;
-		line-height: 50px;
-		font-family: Police6;
-		color: black;
-	}
-	
-	.classe_question {
-		font-family: Police5;
+.classe_question {
+	font-family: Police5;
 		
 	}
 
-	
 
-	.contenu {
-		margin-top: 1vh;
-		font-family: Police6;
-		color: black;
-		background-color: white;
-		filter: drop-shadow(0 0 0.75rem grey);
-		padding: 2em;
-		width: 70%;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
+.contenu {
+	margin-top: 1vh;
+	font-family: Police6;
+	color: black;
+	background-color: white;
+	filter: drop-shadow(0 0 0.75rem grey);
+	padding: 2em;
+	width: 90%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 
+}
+
+/* Afficher & Masquer les mots */
+span {
+	position: relative;
 	}
 
 
-	.blocrouge
-	{
-		width: 100%;
-	}
+.inconnu::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
-	span {
-		position: relative;
-	  }
+.invisible
+{
+	display: none;
+}
 
+.justGuessed{
+	color:green;
+}
 
-	.inconnu::after{
-		content: '';
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-color: black;
-		border-radius: 3px;
-		position: absolute;
-		top: 0;
-		left: 0;
-	}
+.id {
+	background-color: white;
+}
 
-	.invisible
-	{
-		display: none;
-	}
+.afficher {
+	background-color: transparent;
+}
 
-	.justGuessed{
-		color:green;
-	}
+#end {
+	text-align: center;
+	font-family: "Bold";
+	font-family: Police1;
+}
 
-	.id {
-		background-color: white;
-	}
-
-	.afficher {
-		background-color: transparent;
-	}
-
-
-	#liste_reponse {
-		padding: 10px;
-		text-align: center;
-		font-family: Police1;
-		box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-		
-	}
-
-	#end {
-		text-align: center;
-		font-family: "Bold";
-		font-family: Police1;
-	}
-/* 
-	p {
-		font-size: xx-large;
-		text-align: center;
-		font-family: "QuicksandBold";
-		margin-top: 50px;
-	} */
 /* L'endroit où on fait ses propositions */
 
-
-	.input{
-		width: 90%;
-		margin: 0 auto;
-		font-size: 1.4em;
-		font-family: Police1;
-		}
-
-	input[type = text] {    
-	    width: 400px;
-	    height: 80px;  
-	    margin-top: 2vh;
-	    font-size: 1.8em;    
-	    background-color: transparent;
-	    border: none;
-	    border-top: 3px solid #000;    
-	    border-bottom: 3px solid #000;
-	    outline: none;
-  
-    
-    } 
-	
-	input[type="text"]:focus + label,
-	input[type = text]:hover + label{
-		top: -130px;
-		font-size: 1.2em;
-		transition: all .3s;
-		
+.input{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1.4em;
+	font-family: Police1;
 	}
 
-  label{
-    display: block;
-    position: relative;
-    top: -70px;
-    font-size: 1.8em;
-    cursor: text;
-    transition: all .3s;    
-  }
+input[type = text] {    
+	width: 400px;
+	height: 80px;  
+	margin-top: 2vh;
+	font-size: 1.8em;    
+	background-color: transparent;
+	border: none;
+	border-top: 3px solid #000;    
+	border-bottom: 3px solid #000;
+	outline: none;
 
+} 
+	
+input[type="text"]:focus + label,
+input[type = text]:hover + label{
+	top: -130px;
+	font-size: 1.2em;
+	transition: all .3s;
+	
+}
+
+label{
+	display: block;
+	position: relative;
+	top: -70px;
+	font-size: 1.8em;
+	cursor: text;
+	transition: all .3s;    
+}
 
 /* Boutons */
-	.bouton {
-		margin-top: 1vh;
-	}
+.bouton {
+	margin-top: 1vh;
+	cursor: pointer;
+}
 
-	
-
-	.bloc {
-		display: flex;
-		align-content: center;
-		align-items: center;
+.bouton:hover {
+	transition: 0.5s ease-in-out;
+	background: #506751;
 	}

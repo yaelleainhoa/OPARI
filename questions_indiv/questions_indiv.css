@@ -1,178 +1,159 @@
-/* Enonce des règles */
-
-	.texte{
-		text-align: left;
-		margin-left: 10px;
-		font-weight: bolder;
-		font-size: xx-large;
-	}
-
 /* Afficher la question et la réponse*/
 
-
-	.question, .reponse{
-		color: #000;
-		font-size: x-large;
-		text-align: center;
-
+.question{
+	font-size: x-large;
+	text-align: center;
 	}
 
-	.reponse{
-		color: #315146;
-		font-size: x-large;
-		text-align: center;
+.reponse{
+	color: #315146;
+	font-size: x-large;
+	text-align: center;
+	color: #000;
+}
 
-	}
+.contenu_reponse {
+	margin-top: 10px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 5px;
+}
 
-	.texte {
-		color: #000;
-		font-size: xx-large;
-		text-align: center;
-	}
-
-	.contenu_reponse {
-		margin-top: 10px;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		align-content: center;
-		margin-bottom: 5px;}
-
-	.question_reponse {
-		background-color: white;
-		filter: drop-shadow(0 0 0.75rem grey);
-		padding: 5px;
-		font-family: Police10;
-		line-height: normal;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		
-	}
-
+.question_reponse {
+	background-color: white;
+	filter: drop-shadow(0 0 0.75rem grey);
+	padding: 5px;
+	font-family: Police10;
+	line-height: normal;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
 
 /* Couleur des cases par joueur */
 
-	.joueur{
-		margin-top: 0px;
-		color: black;
-		font-size: x-large;
-		margin-bottom: 20px;
-		width: 20%;
-		margin-right: 2%;
-		margin-left: 2%;
-		box-shadow: 5px 5px 5px grey;
-		outline: none;
-		font-family: Police2;
-		
-	}
-
-	.joueurs, .contenu_reponse {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		
-	}
-
-	.cellule {
-		font-family: Police4;
-		font-size: 20px;
-		border: 2px solid black;
-	}
-
- 	#papa {
-		background-color: #CB4483;}
-
-	#sam {
-		background-color: #F6E472;}
-
-	#maman {
-		background-color: #FCAE86;}
+.joueur{
+	margin-top: 0px;
+	color: black;
+	font-size: x-large;
+	margin-bottom: 20px;
+	width: 20%;
+	margin-right: 2%;
+	margin-left: 2%;
+	box-shadow: 5px 5px 5px grey;
+	outline: none;
+	font-family: Police2;
 	
-	#max {
-		background-color: #9CCBC0;}
+}
 
-	#aitor {
-		background-color: #92A0CF;}
-
-	#zaz {
-		background-color: #67A580;}
-
-
-	#id18, #id2, #id14, #id12 {
-		background-color: #CB4483;
-		color: white;
-	}
-
-	#id17, #id3, #id9, #id20 {
-		background-color: #F6E472;
-		color: white;
-	}
-
-	#id1, #id5, #id11, #id7 {
-		background-color: #FCAE86;
-		color: white;
-	}
-
-
-	#id8, #id4, #id10, #id15 {
-		background-color: #92A0CF;
-		color: white;
-	}
-
-	#id6, #id13, #id16, #id19 {
-		background-color: #67A580;
-		color: white;
-	}
-
-	.btn {
-		width: 300px;
-		height: 50px;
-		cursor: pointer;
-		background: transparent;
-		background-color: #97bc82;
-		border-radius: 50% 20% / 10% 40%;
-		outline: none;
-		border: 2px solid black;
-		transition: 1s ease-in-out;
-		margin-bottom: 5vh;
-	  }
-	  
+.joueurs, .contenu_reponse {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	
-	  svg {
-		position: absolute;
-		left: 0;
-		top: 0;
-		fill: none;
-		stroke: #fff;
-		stroke-dasharray: 150 480;
-		stroke-dashoffset: 150;
-		transition: 1s ease-in-out;
-	  }
-	  
-	  .btn:hover {
-		transition: 0.5s ease-in-out;
-		background: #506751;
-	  }
-	  
-	  .btn:hover svg {
-		stroke-dashoffset: -480;
-	  }
-	  
-	  .btn span {
-		color: black;
-		font-family: Police10;
-		font-size: 18px;
-		font-weight: 100;
-	  }
+}
+
+.cellule {
+	font-family: Police4;
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+#papa {
+	background-color: #CB4483;}
+
+#sam {
+	background-color: #F6E472;}
+
+#maman {
+	background-color: #FCAE86;}
+
+#max {
+	background-color: #9CCBC0;}
+
+#aitor {
+	background-color: #92A0CF;}
+
+#zaz {
+	background-color: #67A580;}
+
+#id18, #id2, #id14, #id12 {
+	background-color: #CB4483;
+	color: white;
+}
+
+#id17, #id3, #id9, #id20 {
+	background-color: #F6E472;
+	color: white;
+}
+
+#id1, #id5, #id11, #id7 {
+	background-color: #FCAE86;
+	color: white;
+}
+
+
+#id8, #id4, #id10, #id15 {
+	background-color: #92A0CF;
+	color: white;
+}
+
+#id6, #id13, #id16, #id19 {
+	background-color: #67A580;
+	color: white;
+}
+
+.btn {
+	width: 300px;
+	height: 50px;
+	cursor: pointer;
+	background: transparent;
+	background-color: #97bc82;
+	border-radius: 50% 20% / 10% 40%;
+	outline: none;
+	border: 2px solid black;
+	transition: 1s ease-in-out;
+	margin-bottom: 5vh;
+	}
 	
-	  .btn:hover span {
-		transition: 0.5s ease-in-out;
-		color: white;
-	  }
+
+svg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	fill: none;
+	stroke: #fff;
+	stroke-dasharray: 150 480;
+	stroke-dashoffset: 150;
+	transition: 1s ease-in-out;
+}
 	
-	  #bloc_image {
-		display: flex;
-		justify-content: center;
-		height: 50vh;
-	  }
+.btn:hover {
+	transition: 0.5s ease-in-out;
+	background: #506751;
+	}
+	
+.btn:hover svg {
+	stroke-dashoffset: -480;
+	}
+	
+.btn span {
+	color: black;
+	font-family: Police10;
+	font-size: 18px;
+	font-weight: 100;
+	}
+
+.btn:hover span {
+	transition: 0.5s ease-in-out;
+	color: white;
+	}
+
+#bloc_image {
+	display: flex;
+	justify-content: center;
+	height: 50vh;
+	}

@@ -27,7 +27,7 @@ document.getElementById("manche-select").addEventListener
 	{
 	var selectedValue = document.getElementById("manche-select").value;
 	console.log("selected : "+selectedValue)
-	mancheActuelle = selectedValue - 1
+	mancheActuelle = selectedValue 
 	document.getElementById("image").setAttribute("src", manches[mancheActuelle][0]) ;
 	}
 )
