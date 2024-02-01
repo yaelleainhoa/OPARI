@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Premiers mots...</title>
+  <title>1 jour 1 film</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="avant-apres.css">
   <link rel="stylesheet" href="../menu/homepage.css">
@@ -23,101 +23,18 @@
 	</button>
 </nav>
 
-<p class="regles">Qui est le premier à parler ?</p>
+<p class="regles">Quel film ?</p>
 
-<input type="button" class="bouton" value="Afficher les réponses" onclick="Afficher_reponse(this.id)"></button>
+<div id="container2">
+	<select name="Manche" id="manche-select">
+		<option>Choisir une manche</option>
+	</select>
+</div>
 
-<div class="limiter">
-	<div class="container-table100">
-		<div class="wrap-table100">
-				<div class="table">
+<div id = "bloc_image">
+	<img src="../img/1jour1film.jpg" id="image" onclick="ouvrir_jeu()"">
+</div>
 
-					<div class="row header">
-						<div class="cell" id="date">
-							Qui ?
-						</div>
-						<div class="cell" id="evenement">
-							Quoi ?
-						</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_1">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_1">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_2">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_2">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_3">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_3">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_4">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_4">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_5">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_5">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_6">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_6">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_7">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_7">
-								
-							</div>
-						</div>
-
-						<div class="row">
-							<div class="cell" data-title="Date" id="reponse_8">
-								
-							</div>
-							<div class="cell" data-title="Evenement" id="question_8">
-								
-							</div>
-						</div>
-					</div>
-			</div>
-		</div>
-	</div>
-
-<div class="marge_inf"></div>
   
 </body>
 	<script src="avant-apres.js"></script>

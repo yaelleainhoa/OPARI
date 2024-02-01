@@ -23,14 +23,23 @@
 	</nav>
 
 <p class="regles"> Les règles : </p>
-<p class="enonce_regles">Tour à tour, chaque joueur choisit un numéro. Derrière ce numéro, une question avec un thème. Le joueur peut choisir de répondre avec le joueurou répondre seul à la question, s'il se trompe le joueur dont c'est le thème peut répondre. Distribution des points :</p>
-<p class="enonce_regles">4 points si le joueur seul, 2 points par joueursi le joueur joue avec quelqu'un d'autre et 1 point si le joueur se trompe et l'autre joueur trouve la réponse.</p>
-<div class = "bloc_themes">	
-	<input type="button" class="theme" id="papa" value="Véro notre star"></button>
-	<input type="button" class="theme" id="maman" value="Soirée Boîte"></button>
-	<input type="button" class="theme" id="sam" value="Restau Anniversaire Max"></button>
-	<input type="button" class="theme" id="aitor" value="Journée Anniversaire Max"></button>
-	<input type="button" class="theme" id="zaz" value="Pêle Mêle"></button>
+<div class="joueurs">
+	<button class="btn joueur" id="papa">
+		<span>Thème 1</span>
+	</button>
+	<button class="btn joueur" id="maman">
+		<span>Thème 2</span>
+	</button>
+	<button class="btn joueur" id="sam">
+		<span>Thème 3</span>
+	</button>
+	<button class="btn joueur" id="aitor">
+		<span>Thème 4</span>
+	</button>
+	<button class="btn joueur" id="zaz">
+		<span>Thème 5</span>
+	</button>
+
 </div>
 <table class="tableau">
 	<tr>
@@ -39,9 +48,6 @@
 		<td class="cellule" id="3" onclick="myFunction(this.id)">3</td>
 		<td class="cellule" id="4" onclick="myFunction(this.id)">4</td>
 		<td class="cellule" id="5" onclick="myFunction(this.id)">5</td>
-	</tr>
-
-	<tr>
 		<td class="cellule" id="6" onclick="myFunction(this.id)">6</td>
 		<td class="cellule" id="7" onclick="myFunction(this.id)">7</td>
 		<td class="cellule" id="8" onclick="myFunction(this.id)">8</td>
@@ -56,10 +62,6 @@
 		<td class="cellule" id="13" onclick="myFunction(this.id)">13</td>
 		<td class="cellule" id="14" onclick="myFunction(this.id)">14</td>
 		<td class="cellule" id="15" onclick="myFunction(this.id)">15</td>
-	</tr>
-	
-	<tr>
-		
 		<td class="cellule" id="16" onclick="myFunction(this.id)">16</td>
 		<td class="cellule" id="17" onclick="myFunction(this.id)">17</td>
 		<td class="cellule" id="18" onclick="myFunction(this.id)">18</td>
@@ -70,22 +72,17 @@
 	
 </table>
 
-<div class="bouton_reponse">
-	<input type="button" class="bouton" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
+<div class ="contenu_reponse">
+	<button class="btn bouton_reponse" value="Afficher la réponse" onclick="Afficher_reponse(this.id)">
+		<span>Afficher la réponse 1</span>
+	</button>
 </div>
 
-<div class="contenu_reponse">
-	<p class="texte" style="color:#c25f5f"> Question </p>
-
+<div class="question_reponse">
 	<p id="question" class="question"> </p>
-
-	<p class="texte" style="color:#c25f5f"> Réponse </p>
-
-	<p id="reponse" class="reponse" style="color:#668c6f"></p>
-
-	<p id="masquer" class="masquer"> </p>
+	<p id="reponse" class="reponse"> </p>
 </div>
-<div class="marge_inf"></div>  
+  
 </body>
 	<script src="questions_a_theme.js"></script>
 </html>

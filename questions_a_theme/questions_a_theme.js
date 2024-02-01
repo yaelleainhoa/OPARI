@@ -1,5 +1,3 @@
-document.getElementById("masquer").style.display = "none";
-
 var liste_questions = ["Case 0",
 	"Qui finit torse nu bourré après la soirée ?",
 	"Quel film propose de regarder Eric à Marie ?",
@@ -58,35 +56,21 @@ var liste_reponses = ["Case 0",
 	"Sabine",
 	"Ah merde!",
 
-	
-
-
-
-
-
-
-
-
-
-
-
-
 
 	]
 ;
-
+var id_question  = 0
 function myFunction(clicked_id) {
 	console.log(clicked_id)
 	var Elt = document.getElementById("question");
 	Elt.textContent = liste_questions[clicked_id];
 	document.getElementById(clicked_id).id = "id" + clicked_id;
-	document.getElementById("masquer").textContent=clicked_id;
+	id_question = clicked_id;
 	document.getElementById("reponse").textContent= "";
 }
 
 function Afficher_reponse(clicked_id) {
-	var id_reponse = document.getElementById("masquer").textContent;
 	var Elt = document.getElementById("reponse");
-	Elt.textContent = liste_reponses[id_reponse];
+	Elt.textContent = liste_reponses[id_question];
 
 }

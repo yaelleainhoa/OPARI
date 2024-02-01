@@ -1,44 +1,39 @@
-var question = [
-	"Je me barre",
-	"Ça va ?",
-	"Salut",
-	"Tu sais si Juliette va venir ? (Même personne que 'Ça va ?')",
-	"Non je ne sais pas",
-	"Marie, elle est où Marie ?",
-	"Je ne sais pas, elle m'a dit qu'elle venait",
-	"C'est de moi que tu parles Ducon ?",
-	"T'es là depuis combien de temps ?"]; 
+manches = [
+	"", // 0
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023#Par_division", // 1
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023#Par_division", // 2
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023#Par_division", // 3
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023", // 4
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023#Par_division", // 5
+	"https://fr.wikipedia.org/wiki/", // 6
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023#Par_division", // 7
+	"https://fr.wikipedia.org/wiki/Saison_NBA_2022-2023#Par_division" // 8
 
-document.getElementById("question_1").textContent = question[0];
-document.getElementById("question_2").textContent = question[1];
-document.getElementById("question_3").textContent = question[2];
-document.getElementById("question_4").textContent = question[3];
-document.getElementById("question_5").textContent = question[4];
-document.getElementById("question_6").textContent = question[5];
-document.getElementById("question_7").textContent = question[6];
-document.getElementById("question_8").textContent = question[7];
+]
 
+films = []
+let manchesNb = 10
 
-var reponse = [
-	"Ludo ",
-	"Antoine",
-	"Véronique",
-	"Antoine",
-	"Max",
-	"Éric",
-	"Vincent",
-	"Marie",
-	"Isabelle"]; 
+mancheActuelle = 0
 
-function Afficher_reponse() {
-	document.getElementById("reponse_1").textContent = reponse[0];
-	document.getElementById("reponse_2").textContent = reponse[1];
-	document.getElementById("reponse_3").textContent = reponse[2];
-	document.getElementById("reponse_4").textContent = reponse[3];
-	document.getElementById("reponse_5").textContent = reponse[4];
-	document.getElementById("reponse_6").textContent = reponse[5];
-	document.getElementById("reponse_7").textContent = reponse[6];
-	document.getElementById("reponse_8").textContent = reponse[7];
+for(let i = 1; i < manchesNb + 1 ; i++)
+	{
+		this.document.getElementById("manche-select").innerHTML += '<option value='+i + '> Manche ' + String(i) + "</option>"
+	}
 
-}
-;
+	document.getElementById("manche-select").addEventListener 
+	("change", function() 
+		{
+		var selectedValue = document.getElementById("manche-select").value;
+		console.log("selected : "+selectedValue)
+		mancheActuelle = selectedValue
+		
+		}
+	)
+
+	
+	function ouvrir_jeu() {
+		console.log(mancheActuelle)
+		window.open(manches[mancheActuelle], "_blank") ;
+
+	}

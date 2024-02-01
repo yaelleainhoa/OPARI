@@ -1,46 +1,46 @@
 var questions = [
 	/* Question Aita*/
-	"Max et Vincent se connaissent depuis 20 ans. (Lors des Petits Mouchoirs)",
-	"La dame qui s'occupe de la maison de vacances s'appelle Brigitte.",
-	"Lors du premier restaurant, ils fêtent l'anniversaire de Marie.",
-	"M arrive avec une boîte de chocolats chez Marie.",
+	"Dans la saison actuelle de la Liga, le club le plus au sud est Cadix CF.",
+	"Dans la saison actuelle de la Liga, le club le plus à l'ouest est Celta de Vigo.",
+	"Dans la saison actuelle de la Liga, la communauté autonome la plus représentée est la communauté de Madrid.",
+	"Dans la saison actuelle de la Liga, 6 clubs sont en Liga depuis le XXe siècle..",
 	/* Question Amatxo*/
-	"Antoine répond Bah dans son cul à la question Où il va dormir ?",
-	"Marie annonce à Eric en premier qu'elle est enceinte",
-	"Les deux phrases à dire aux bocaux de riz sont Je t'aime et Je te hais",
-	"Véro dit : Justement je vais faire un risotto",
+	"Dans la saison actuelle de l'Euroligue, le club le plus au nord est l'ALBA Berlin.",
+	"Dans la saison actuelle de l'Euroligue, 3 villes accueillent 2 clubs (hormis Tel Aviv).",
+	"Dans la saison actuelle de l'Euroligue, deux clubs jouent dans le même stade (hormis Tel Aviv).",
+	"Dans la saison actuelle de l'Euroligue, il y a autant de joueurs espagnols dans l'effectif du Barça et du Real.",
 	/* Question Samuel*/
-	"Le père de Canet joue dans le film.",
-	"L'anniversaire d'Elliott est le 19 février",
-	"Sabine et Max se sont rencontrés au cabinet.",
-	"Alex et le phasme se sont rencontrés au cabinet.",
+	"Lors de la coupe du monde de basket 2019, la finale a eu lieu à Pekin.",
+	"Lors de la finale de la coupe du monde de basket 2019, le meilleur marqueur était Ricky Rubio.",
+	"Lors de la coupe du monde de basket 2019, les États Unis ont la meilleure moyenne de points marqués par match.",
+	"Lors de la coupe du monde de basket 2019, Luis Scola finit dans le meilleur 5 de la compétition.",
 	/* Question Aitor*/
-	"La fille d'Eric a plus d'un an.",
-	"L'anniversaire surprise de Max est l'idée de Marie.",
-	"Max est le vrai père de Jeanne.",
-	"Le cabanon de la maison de Max est relié au tout à l'égoût.",
+	"Lors de la saison NBA 2022-2023, Jokic a fait 28 triples doubles.",
+	"Lors de la saison NBA 2022-2023, la finale NBA s'est terminée sur un match 6.",
+	"Lors de la saison NBA 2022-2023, Denver a fini premier de conférence Ouest.",
+	"Lors de la saison NBA 2022-2023, San Antonio a fini dernier de la conférence Ouest.",
 	
 	];
 
 var reponses = [
 	"Faux", /* Question Aita*/
-	"Vrai",
+	"Faux",
 	"Faux",
 	"Faux",
 	
 	"Faux", /* Question Amatxo */
+	"Vrai",
+	"Vrai",
 	"Faux",
-	"Vrai",
-	"Vrai",
 	
 	"Vrai", /* Question Samuel */
 	"Faux",
-	"Vrai",
+	"Faux",
 	"Vrai",
 	
-	"Faux", /* Question Aitor */
+	"Faux", /* Question Samuel */
 	"Faux",
-	"Faux",
+	"Vrai",
 	"Vrai",
 	
 
@@ -48,24 +48,24 @@ var reponses = [
 ;
 var explications = [
 	/* Question  Aitatxo*/
-	"Depuis 15 ans",
+	"C'est UD Las Palmas.",
+	"C'est UD Las Palmas.",
+	"C'est l'Andalousie avec 5 clubs - Madrid (4).",
+	"4 - Real Madrid, FC Barcelone, Athletic Club et Valence CF.",
+	/* Question Samuel */
+	"Žalgiris Kaunas.", 
+	"Istanbul, Athènes et Belgrade.",
+	"Le Partizan et l'Étoile Rouge à la Štark Arena.",
+	"6 dans l'effectif du Barça et 7 dans celui du Real (sauf si Rubio a signé depuis).",
+	/* Question Samuel */
+	"", 
+	"Gabriel Deck a marqué 24 points, 20 pour Ricky.",
+	"C'est la Nouvelle-Zélande avec 99,4 points par match.",
 	"",
-	"L’anniversaire d'Antoine",
-	"Avec un bouquet de fleurs.",
-	/* Question  Amatxo*/
-	"Il dit juste Dans son cul.",
-	"Eric l'apprend en voyant le test de grossesse",
+	/* Question Samuel */
+	"39 (10 en Playoffs et 29 en saison régulière.", 
+	"Et non Denver a gagné en 5 matchs.",
 	"",
-	"",
-	/* Question  Samuel*/
-	"Le voisin sur le ponton",
-	"C'est le 15 mars bien évidemment !",
-	"",
-	"",
-	/* Question  Aitor*/
-	"Elle a 10 mois.",
-	"C'est l'idée d'Antoine.",
-	"C'est la vraie fille de Joël.",
 	"",
 
 	];
