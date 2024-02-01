@@ -98,13 +98,16 @@ var id  ="";
 var nbrManche = "";
 
 function selection_manche(clicked_manche) {
+	document.getElementById("answers").classList.remove("invisible");
+
 	nbrManche = clicked_manche;
 	id = clicked_manche.substr(6, 1); 
 	document.getElementById("nom_manche").textContent = theme[id];
 	var j = 8 * id;
 	for (var i = 0 ; i < 8 ; i++)
 		{
-			document.getElementById(i).style.backgroundColor = "#EFF4E6";
+			document.getElementById(i).classList.remove("right")
+			document.getElementById(i).classList.remove("wrong")
 			document.getElementById(i).textContent = manche[j + i];
 		}
 	nbrManche = parseInt(id, 4);
@@ -118,14 +121,12 @@ function correct(clicked_id)
 	
 	if (clicked_id === incorrect[nbrManche])
 		{
-		 	Elt.style.backgroundColor = "#DE8273";
-			Elt.style.width = "500px";
+		 	Elt.classList.add("wrong")
 		}
 
 	else
 		{
-		 	Elt.style.backgroundColor = "#A7BD9F";
-			Elt.style.width = "500px";
+		 	Elt.classList.add("right")
 		}
 
 		document.getElementById(clicked_id).textContent = manche[j + clicked_id] + infos[j + clicked_id];

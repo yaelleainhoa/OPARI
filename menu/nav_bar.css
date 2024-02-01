@@ -46,21 +46,21 @@
 	} */
 
 	td {
-		background-color: #EFF4E6;
+		/* background-color: #EFF4E6; */
 		border-collapse: separate;
 		cursor: pointer;
 
 	}
 
 	td {
-		border: 1px solid rgb(190, 190, 190);
+		/* border: 1px solid rgb(190, 190, 190); */
 	    padding: 20px;
 	}
 
 	td:hover {
-		background: #763538;
+		background: #ff6f6f;
 		color: white;
-		transition: 0.5s;}
+		transition: 0.3s;}
 
 
 
