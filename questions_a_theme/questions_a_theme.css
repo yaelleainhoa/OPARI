@@ -62,6 +62,11 @@
 	color: white;
   }
 
+  td:hover {
+	background: #ff6f6f;
+	color: white;
+	transition: 0.3s;}
+
 
 /* Afficher la question et la réponse*/
 

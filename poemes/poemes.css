@@ -1,23 +1,3 @@
-/* Affichage des questions */
-	.question, .reponse {
-		display: inline;
-		visibility: hidden;}
-
-	.question, .reponse, .propal {
-		font-family: Police1;
-	}
-
-	.question {
-		display: inline;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		
-	}
-
-	.propal {
-		color: black;
-	}
-
 	.questions {
 		margin-left: 20px;
 		margin-top: 20px;
@@ -29,24 +9,80 @@
 		width: 70%;
 		height: auto;
 		margin-left: auto;
-		margin-right: auto;}
-
-	.bloc {
-		margin-bottom: 60px;
-		font-size: x-large;
-		line-height: 40px;
+		margin-right: auto;
 		}
+	
+	table {
+		font-family: Police2;
+		font-size: 2rem;
+		letter-spacing: 1px;
+		border-spacing:  1rem;
+	}
 
-	input[type="button"]{
-		margin-left: 20px;
-		}
+	thead, tfoot {
+		background-color: rgb(228 240 245);
+	}
 
-	.bouton {
-		width: auto;
-		height: auto;
-		padding: 10px 10px;
-		font-size: large;
-		position:relative; 
-    	display:inline-block; 
-    	float:right;
+	th {
+		border: 1px solid rgb(160 160 160);
+		width: 40%;
+		font-family: Police12;
+	}
+
+	td {
+		border: 1px solid rgb(160 160 160);
+		width: 40%;
+	}
+
+	img {
+		width: 10vw;
+	}
+
+	.image:hover  {
+		box-shadow: 10px 5px 5px grey;
+		border-radius: 30px;}
+
+	.image:active  {
+		box-shadow: 10px 5px 5px pink;
+		border-radius: 30px;}
+
+
+	.btn {
+		width: 300px;
+		height: 50px;
+		cursor: pointer;
+		background-color: #97bc82;
+		border-radius: 50% 20% / 10% 40%;
+		outline: none;
+		border: 2px solid black;
+		transition: 1s ease-in-out;
+		margin-bottom: 5vh;
+	}
+	
+	
+	.btn:hover {
+		transition: 0.5s ease-in-out;
+		background: #506751;
+	}
+	
+	.btn:hover svg {
+		stroke-dashoffset: -480;
+	}
+	
+	.btn span {
+		color: black;
+		font-family: Police10;
+		font-size: 18px;
+		font-weight: 100;
+	}
+	
+	.btn:hover span {
+		transition: 0.5s ease-in-out;
+		color: white;
+	}
+	.contenu_reponse {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
 	}

@@ -157,3 +157,9 @@ svg {
 	justify-content: center;
 	height: 50vh;
 	}
+
+	td:hover {
+		background: #ff6f6f;
+		color: white;
+		transition: 0.3s;}
+

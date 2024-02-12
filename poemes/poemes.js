@@ -1,89 +1,109 @@
-var titre = [
-	"Bah j'ai dansé un peu, et puis après je me suis fait baisée par 3 surfeurs sur un trampoline du club Mickey.",
-	"Je suis bien là-bas ça m'apaise",
-	"C'est de ma faute s'il s'est pété la gueule ?",
-	"Il faut que tu rencontres ce mec il est génial",
-	"Vous êtes au courant pour Juliette ?",
-	"Comment je fais sans toi ?",
-	"Je pensais pas que ça me plairait autant de déclarer ma flamme à un pot de riz",
-	"Il n'y a pas de problème mon chat tu es un grand garcon",
-	"Non j'arrive pas comme ça la gueule enfarinée.",
-	"Mais c'est qui Ludo ?" ,
-	"Max - Je vais prendre une douche & [....] - Ouais je viens avec toi",
-	"Vous allez pas pouvoir rester ici",
-	"TEXTO - Nous c'était autre chose ! Bonne nuit ma caille",
-	"Isabelle je te trouve sublime (...) tu as un corps magnifique, désolé de le dire comme ça mais qu'est ce que ce cul",
-	"Oh putain tu m'as vu !",
-	"Tu la sens ? Cette énergie entre nous ?"
-]
-
-var debut = [
-	"Véronique",
-	"Marie",
-	"Eric",
-	"Max",
-	"Vincent",
-	"Eric",
-	"Véronique",
-	"Le phasme",
-	"Eric",
-	"Nino",
-	"Antoine",
-	"Max",
-	"Vincent",
-	"Antoine",
-	"Marie",
-	"Nassim"
-
-
-	
-]
-
-var fin = [
-	" - En répondant à son mari quand il lui demande ce qu'elle a fait hier soir",
-	" - En parlant de l'Amazonie",
-	" - En parlant de l'accident de Ludo",
-	" - En parlant de Jean Louis",
-	" - En parlant de Juliette et de son mariage",
-	" - En faisant la déclaration à Léa depuis la place",
-	" - En parlant des pots de riz de Nassim",
-	" - Quand son gars veut du fromage.",
-	" - En répondant à Max",
-	" - Quand il voit la photo de groupe",
-	" - Quel blagueur !",
-	" - Quand il vire ses copains de la maison",
-	" Texto entier : J'espère que c'est pas la présence d'Alex qui perturbe, je voulais que tu le rencontres. Même si je suis très amoureux de lui, ce que j'ai ressenti pour toi, ça n'avait rien à voir...",
-	" - Quand il drague Isa",
-	" - Quand elle arrive en retard à la surprise",
-	" - Quand il fait un calin avec Eric"
-	
+images  = [
+	"../jeu_poemes/h.png",
+	"../jeu_poemes/m.png",
+	"../jeu_poemes/p.png",
+	"../jeu_poemes/j.png",
+	"../jeu_poemes/f.png",
+	"../jeu_poemes/n.png",
+	"../jeu_poemes/l.png",
+	"../jeu_poemes/i.png",
+	"../jeu_poemes/g.png",
+	"../jeu_poemes/k.png",
 
 ]
 
-for (var i = 0 ; i < titre.length ; i ++) {
-	var j = i + 1;
-	var EltQuestion = "question" + j ;
-	document.getElementById(EltQuestion).textContent = titre[i];
+reponses = [
+	"f(x) = 256 ⋅ x^9 - 576 ⋅ x^7 + 432 ⋅ x^5 - 120 ⋅ x^3 + 9 ⋅ x",
+	"f(x) = sin [cos^2 (x)]",
+	"f(x) = cos(x) - sin (x)",
+	"f(x) = cos [sin^2 (x)]",
+	"f(x) = sin [cos (x)]",
+	"f(x) = cos (x^2) - sin (x)",
+	"f(x) = cos [sin (x)]",
+	"f(x) = cos (x) + sin (x)",
+	"f(x) = sin (x^2) - cos (x)",
+	"f(x) = cos (x) ⋅ sin (x)",
 
-	var EltQ = "q" + j;
-	document.getElementById(EltQ).textContent = debut[i];
+]
 
-	var EltR = "r" + j;
-	document.getElementById(EltR).textContent = fin[i];
+bonnes_reponses = [
+	"m.png",
+	"n.png",
+	"i.png",
+	"p.png",
+	"f.png",
+	"l.png",
+	"g.png",
+	"h.png",
+	"k.png",
+	"j.png"	
 
-};
+]
 
+score  = [
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
 
+] 
 
-function Afficher_reponse(id) {
-	var rep = "r" + id;
-	var que = "q" + id;
+for (let i = 0 ; i < reponses.length ; i++) {
+	var variable = "drag" + i;
+	var proposition = "prop" + i;
+	document.getElementById(variable).setAttribute("src", images[i])
+	this.document.getElementById(proposition).innerText =  reponses[i]
 	
-	document.getElementById(rep).style.visibility = "visible";
-	document.getElementById(rep).style.color = "#ff8484";
-
-	document.getElementById(que).style.visibility = "visible";
-	document.getElementById(que).style.color = "#ff8484";
 }
-;
 
+var valeur_select = ""
+var reponse_select = ""
+var image_selectionne = 10
+var indice = 0
+
+function allowDrop(ev) {
+	ev.preventDefault();
+}
+function dragStart(ev) {
+	ev.dataTransfer.setData("text", ev.target.id);
+	valeur_select = ev.target.id
+	image_selectionne = ev.target.src.substr(-5)
+	
+
+}
+function dragDrop(ev) {
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+	reponse_select = ev.target.id
+	indice = reponse_select.substr(-1)
+	score[indice] = image_selectionne
+
+
+}
+var carreau = ""
+
+function resultat_final()
+{
+	for (let i = 0 ; i < reponses.length ; i++) 
+	{
+		if (bonnes_reponses[i] == score [i]) 
+		{
+			carreau = "prop" + i.toString()
+			document.getElementById(carreau).style.backgroundColor = "#C6E5BA"
+		}
+
+		else 
+		{
+			carreau = "prop" + i.toString()
+			document.getElementById(carreau).style.backgroundColor = "#FF6961"
+		}
+		
+	}
+}

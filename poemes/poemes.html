@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Connais-tu la suite...?</title>
+  <title>Connais-tu ces fonctions ?</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="../menu/nav_bar.css">
   <link rel="stylesheet" href="../menu/homepage.css">
@@ -13,146 +13,143 @@
 <body>
 	<nav class="nav_bar">
 		<button onclick="window.location.href='../vf/vf.html'">
-			<img src="../img/left-arrow.png" id="left-arrow">
+			<img class="image" src="../img/left-arrow.png" id="left-arrow">
 		</button>
 		<button onclick="window.location.href='../menu/homepage.html'">
-			<img src="../img/home.png" id="home-img" >
+			<img class="image" src="../img/home.png" id="home-img" >
 		</button>
 		<button onclick="window.location.href='../avant-apres/avant-apres.html'">
-			<img src="../img/right-arrow.png" id="right-arrow">
+			<img class="image" src="../img/right-arrow.png" id="right-arrow">
 		</button>
 	</nav>
 
-<p class="regles"> Les règles : </p>
-<p class="enonce_regles">Pour chaque phrase, dire qui a dit cette phrase ?</p>
+<p class="enonce_regles">Pour chaque fonction, trouver sa formule</p>
+<script>
+	
+</script>
 
 <div class="questions">
-	<div class="bloc">
-		<div id="question1" class="propal"></div>
-		<div id="q1" class="question"></div>
-		<div id="r1" class="reponse"></div>
+	
+<table>
 
-		<input type="button" class="bouton" id="1" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+	  <tbody>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag0"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-	<div class="bloc">
-		<div id="question2" class="propal"></div>
-		<div id="q2" class="question"></div>
-		<div id="r2" class="reponse"></div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop0">
 
-		<input type="button" class="bouton" id="2" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			</th>
+		</tr>
 
-	<div class="bloc">
-		<div id="question3" class="propal"></div>
-		<div id="q3" class="question"></div>
-		<div id="r3" class="reponse"></div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag1"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-		<input type="button" class="bouton" id="3" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop1">
 
-	<div class="bloc">
-		<div id="question4" class="propal"></div>
-		<div id="q4" class="question"></div>
-		<div id="r4" class="reponse"></div>
+			</th>
+		</tr>
 
-		<input type="button" class="bouton" id="4" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag2"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-	<div class="bloc">
-		<div id="question5" class="propal"></div>
-		<div id="q5" class="question"></div>
-		<div id="r5" class="reponse"></div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop2">
 
-		<input type="button" class="bouton" id="5" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			</th>
+		</tr>
 
-	<div class="bloc">
-		<div id="question6" class="propal"></div>
-		<div id="q6" class="question"></div>
-		<div id="r6" class="reponse"></div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag3"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-		<input type="button" class="bouton" id="6" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop3">
 
-	<div class="bloc">
-		<div id="question7" class="propal"></div>
-		<div id="q7" class="question"></div>
-		<div id="r7" class="reponse"></div>
+			</th>
+		</tr>
 
-		<input type="button" class="bouton" id="7" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag4"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-	<div class="bloc">
-		<div id="question8" class="propal"></div>
-		<div id="q8" class="question"></div>
-		<div id="r8" class="reponse"></div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop4">
 
-		<input type="button" class="bouton" id="8" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			</th>
+		</tr>
 
-	<div class="bloc">
-		<div id="question9" class="propal"></div>
-		<div id="q9" class="question"></div>
-		<div id="r9" class="reponse"></div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag5"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-		<input type="button" class="bouton" id="9" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop5">
 
-	<div class="bloc">
-		<div id="question10" class="propal"></div>
-		<div id="q10" class="question"></div>
-		<div id="r10" class="reponse"></div>
+			</th>
+		</tr>
 
-		<input type="button" class="bouton" id="10" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag6"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-	<div class="bloc">
-		<div id="question11" class="propal"></div>
-		<div id="q11" class="question"></div>
-		<div id="r11" class="reponse"></div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop6">
 
-		<input type="button" class="bouton" id="11" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			</th>
+		</tr>
 
-	<div class="bloc">
-		<div id="question12" class="propal"></div>
-		<div id="q12" class="question"></div>
-		<div id="r12" class="reponse"></div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag7"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-		<input type="button" class="bouton" id="12" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop7">
 
-	<div class="bloc">
-		<div id="question13" class="propal"></div>
-		<div id="q13" class="question"></div>
-		<div id="r13" class="reponse"></div>
+			</th>
+		</tr>
 
-		<input type="button" class="bouton" id="13" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag8"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-	<div class="bloc">
-		<div id="question14"  class="propal"></div>
-		<div id="q14" class="question"></div>
-		<div id="r14" class="reponse"></div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop8">
 
-		<input type="button" class="bouton" id="14" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			</th>
+		</tr>
 
-	<div class="bloc">
-		<div id="question15" class="propal"></div>
-		<div id="q15" class="question"></div>
-		<div id="r15" class="reponse"></div>
+		<tr>
+			
+			<td class="divfirst" ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+				<img class="image" id="drag9"	draggable="true" ondragstart="dragStart(event)">
+			</td>
 
-		<input type="button" class="bouton" id="15" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
-	</div>
+			<th ondrop="dragDrop(event)" ondragover="allowDrop(event)"scope="row" id="prop9">
 
-	<div class="bloc">
-		<div id="question16" class="propal"></div>
-		<div id="q16" class="question"></div>
-		<div id="r16" class="reponse"></div>
+			</th>
+		</tr>
+	  </tbody>
+</table>
 
-		<input type="button" class="bouton" id="16" value="Afficher la réponse" onclick="Afficher_reponse(this.id)"></button>
+	<div class ="contenu_reponse">
+		<button class="btn bouton_reponse" id="afficher_rep" value="Afficher la réponse" onclick="resultat_final()">
+			<span>Afficher la réponse 1</span>
+		</button>	
+		
 	</div>
 </div>
 
