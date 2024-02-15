@@ -1,52 +1,52 @@
 /*Les polices*/
     @font-face {
         font-family: "Police1";
-        src: url('../polices/Police1.ttf');
+        src: url('OPARI/polices/Police1.ttf');
     }
 
     @font-face {
         font-family: "Police2";
-        src: url('../polices/Police2.ttf');
+        src: url('OPARI/polices/Police2.ttf');
     }
 
     @font-face {
         font-family: "Police3";
-        src: url('../polices/Police3.ttf');
+        src: url('OPARI/polices/Police3.ttf');
     }
 
     @font-face {
         font-family: "Police4";
-        src: url('../polices/Police4.ttf');
+        src: url('OPARI/polices/Police4.ttf');
     }
 
     @font-face {
         font-family: "Police5";
-        src: url('../polices/Police5.ttf');
+        src: url('OPARI/polices/Police5.ttf');
     }
 
     @font-face {
         font-family: "Police8";
-        src: url('../polices/Police8.otf');
+        src: url('OPARI/polices/Police8.otf');
     }
 
     @font-face {
         font-family: "Police9";
-        src: url('../polices/Police9.ttf');
+        src: url('OPARI/polices/Police9.ttf');
     }
 
     @font-face {
         font-family: "Police10";
-        src: url('../polices/Police10.otf');
+        src: url('OPARI/polices/Police10.otf');
     }
 
     @font-face {
         font-family: "Police11";
-        src: url('../polices/Police11.ttf');
+        src: url('OPARI/polices/Police11.ttf');
     }
 
     @font-face {
         font-family: "Police12";
-        src: url('../polices/Police12.otf');
+        src: url('OPARI/polices/Police12.otf');
     }
 
 html {
