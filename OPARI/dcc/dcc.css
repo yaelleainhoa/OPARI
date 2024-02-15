@@ -1,0 +1,122 @@
+/* De manière générale */
+	.bloc {
+		margin-top: 50px;
+		margin-left: 60px;
+		margin-right: 60px;
+		line-height: 30px;
+		font-size: x-large;
+		background-color: white;
+		filter: drop-shadow(0 0 0.75rem grey);
+		padding: 2em;
+		font-family: Police1;
+		color: black;
+	}
+
+/* Boutons Duo Carre ou Cash */
+
+	.boutons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bouton {
+		width: 30%;
+		}
+
+/* Navigation entre les pages */
+	
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 20px;
+	}
+
+	.selection {
+		font-size: x-large;
+		margin-top: 20px;
+		color: #fff;
+		text-transform: uppercase;
+		border-radius: 5px;
+		border: none;
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+		height: 50px;
+		padding: 10px;
+		text-align: center;
+		font-family: Police2;	}
+
+	.selection:hover {
+		background: #5F9D44;
+		letter-spacing: 1px;
+		box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+		transition: all 0.4s ease 0s;}
+
+/* Afficher les propositions Duo, Carre ou Cash */
+	
+	.pduo, .pcarre, .pcash {
+		margin-top: 20px;
+		color: #000 !important;
+		text-decoration: none;
+		background:#E3D9CF;
+		border-radius: 5px;
+		padding: 50px 10px;
+		height: auto;
+		width: 30%;
+		text-align: center;
+		font-size: auto;
+		}
+
+	.pcash {
+		width: 90%;}
+
+/* Questions */
+
+	.question {
+		color: #000;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	
+
+	.reponse {
+		margin-bottom: 20px;
+		margin-left: 35px;
+		margin-right: auto;
+		
+
+	}
+
+	.bloc {
+		height: 500px;
+	}
+
+	
+	
+
+	#duo00{
+		position:absolute; top: 200px; left: 50px;
+			}
+
+	#duo01{
+		position:absolute; top: 200px; right: 50px;
+		}
+
+	#car00{
+		position:absolute; top: 200px; left: 50px;
+			}
+	
+	#car01{
+		position:absolute; top: 200px; right: 50px;
+		}
+	
+		#car02{
+			position:absolute; top: 350px; left: 50px;
+				}
+		
+		#car03{
+			position:absolute; top: 350px; right: 50px;
+			}

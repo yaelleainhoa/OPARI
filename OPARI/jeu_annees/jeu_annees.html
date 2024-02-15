@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FRAMED</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="jeu_annees.css">
+  <link rel="stylesheet" href="../../homepage.css">
+  <link rel="stylesheet" href="../../nav_bar.css">
+</head>
+
+<body>
+<nav class="nav_bar">
+	<button onclick="window.location.href='../encheres/encheres.html'">
+		<img src="../img/left-arrow.png" id="left-arrow">
+	</button>
+	<button onclick="window.location.href='../../index.html'">
+		<img src="../img/home.png" id="home-img" >
+	</button>
+	<button onclick="window.location.href='../questions_indiv/questions_indiv.html'">
+		<img src="../img/right-arrow.png" id="right-arrow">
+	</button>
+</nav>
+
+
+<div id="container2">
+	<select name="Manche" id="manche-select">
+	</select>
+</div>
+
+<div id="container">
+		<div class="center">
+		  <button class="btn indice" id="1" onclick="Afficher_image(1)">
+				<span>Indice 1</span>
+			</button>
+
+			<button class="btn indice" id="2" onclick="Afficher_image(this.id)">
+					<span>Indice 2</span>
+			</button>
+			
+			<button class="btn indice" id="3" onclick="Afficher_image(this.id)">
+				<span>Indice 3</span>
+			</button>
+		
+			<button class="btn indice" id="4" onclick="Afficher_image(this.id)">
+				<span>Indice 4</span>
+			</button>
+	
+			<button class="btn indice" id="5" onclick="Afficher_image(this.id)">
+				<span>Indice 5</span>
+			</button>
+
+			<button class="btn indice" id="6" onclick="Afficher_image(this.id)">
+				<span>Réponse</span>
+			</button>
+		</div>
+</div>
+
+
+<div id = "bloc_image">
+	<img src="../series/play.jpg" id="image">
+</div>
+ 
+</body>
+	<script src="jeu_annees.js"></script>
+</html>
+

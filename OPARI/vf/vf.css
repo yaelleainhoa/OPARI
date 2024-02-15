@@ -1,0 +1,88 @@
+/* Affichage des questions */
+
+h1{
+	
+	color: #000;
+	font-family: Police7;
+	text-align: center;	}
+
+.bouton {
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: Police3;
+	width: 10px;
+}
+
+
+.sousbloc * {
+	display: inline-block;
+	font-family: Police3;
+	
+}
+
+.vrai, .faux {
+	padding: 10px 10px;
+	font-family: Police3;
+}
+
+.carre {
+	text-align: center;
+	align-self: center;
+	background-color: #fff;
+	font-size: large;
+	box-shadow: 5px 5px 10px;
+	display: inline-block;
+	padding: 10px;
+	width: 30%;
+	margin-top: 20px;
+	margin-left: 4.5%;
+	margin-right: 4.5%;
+	font-family: Police4;
+}
+
+
+
+.equipe {
+	font-family: Police3;
+}
+
+.reponse {
+	text-align: center;
+	align-self: center;
+	background-color: white;
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	height: auto;
+	display: inline-block;
+}
+
+.bouton {
+
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #7E121D;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+	padding-top:  7px;
+	padding-bottom:  7px;
+	width: auto;
+	}
+
+.ligne {
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+}
+
+.carre {
+	width: 90%;
+}
+
+
+

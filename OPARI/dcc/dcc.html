@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Duo Carré ou Cash</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../nav_bar.css">
+  <link rel="stylesheet" href="../../homepage.css">
+  <link rel="stylesheet" href="dcc.css">
+</head>
+
+<body>
+<nav class="nav_bar">
+	<button onclick="window.location.href='../avant-apres/avant-apres.html'">
+		<img src="../img/left-arrow.png" id="left-arrow">
+	</button>
+	<button onclick="window.location.href='../../index.html'">
+		<img src="../img/home.png" id="home-img" >
+	</button>
+	<button onclick="window.location.href='../questions_a_theme/questions_a_theme.html'">
+		<img src="../img/right-arrow.png" id="right-arrow">
+	</button>
+</nav>
+
+	
+<p class="regles"> Les règles : </p>
+<p class="enonce_regles">Pour chaque question, la personne désignée doit dire si elle veut répondre Duo (2 propositions), Carré (4 propositions) ou Cash (Pas de propositions). </p>
+<p class="enonce_regles">Si la personne répond bien, elle gagnera respectivement 1, 3 ou 5 points.</p>
+
+<div class="bloc">
+	<div class="navigation">
+		<input type="button" class="selection" value="<< Précédente" id="previous"onclick="precedent()"></button>
+		<input type="button" class="selection" value="Suivante >>" id="next" onclick="suivant()"></button>
+	</div>
+	<div class="question" id="question"></div>
+	<div class="boutons">
+		<input type="button" class="bouton" id="idduo" value="Duo" onclick="duo()"></button>
+		<input type="button" class="bouton" id="idcarre" value="Carre" onclick="carre()"></button>
+		<input type="button" class="bouton" id="idcash" value="Cash" onclick="cash()"></button>
+	</div>
+	<div class="reponses">
+		<div id="duo" class= "reponse" style="display: none;">
+			<div type="button" class="pduo" id="duo00" onclick="resultat(this.id)"></div>
+			<div type="button" class="pduo" id="duo01" onclick="resultat(this.id)"></div>
+		</div>
+		<div id="carre" class= "reponse" style="display: none;">
+			<div type="button" class="pcarre" id="car00" onclick="resultat(this.id)"></div>
+			<div type="button" class="pcarre" id="car01" onclick="resultat(this.id)"></div>
+			<div type="button" class="pcarre" id="car02" onclick="resultat(this.id)"></div>
+			<div type="button" class="pcarre" id="car03" onclick="resultat(this.id)"></div>
+		</div>
+		<div id="cash" class= "reponse" style="display: none;">
+			<div type="button" class="pcash" id="cas00" onclick="resultatcash()">Quelle est votre réponse ?</div>
+		</div>
+	</div>	
+</div>
+
+
+
+</body>
+	<script src="dcc.js"></script>
+</html>

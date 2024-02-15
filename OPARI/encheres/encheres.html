@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wikipédia</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../nav_bar.css">
+  <link rel="stylesheet" href="encheres.css">
+  <link rel="stylesheet" href="../../homepage.css">
+
+
+</head>
+
+<body>
+<nav class="nav_bar">
+	<button onclick="window.location.href='../../index.html'">
+		<img src="../img/left-arrow.png" id="left-arrow">
+	</button>
+	<button onclick="window.location.href='../../index.html'">
+		<img src="../img/home.png" id="home-img" >
+	</button>
+	<button onclick="window.location.href='../jeu_annees/jeu_annees.html'">
+		<img src="../img/right-arrow.png" id="right-arrow">
+	</button>
+</nav>
+
+<p class="enonce_regles">Deviner la page Wikipedia !</p>
+<div class="navigation">
+	<div class="selector">
+		<select id="select"></select>
+	</div>
+</div>
+
+<div class="contenu">
+	<div class="input">
+		<div class="blocrouge">
+			<input type="text" name="proposition" id="prop">
+			<label for="prop"> Mot à ajouter </label>	
+			<div id="pages"></div>
+		</div>
+	<div class="end" id="end"></div>
+</div>
+<div class="navigation">
+	<input type="button" class="bouton" id="devoiler" value="Je ne sais pas..." onclick="devoiler_reponse()"></button>
+</div>
+
+</body>
+
+<script src="encheres.js"></script>
+
+	
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Joker ?</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="questions_indiv.css">
+	<link rel="stylesheet" href="../../homepage.css">
+	<link rel="stylesheet" href="../../nav_bar.css">
+  </head>
+  
+  <body>
+	  <nav class="nav_bar">
+		  <button onclick="window.location.href='../jeu_annees/jeu_annees.html'">
+			  <img src="../img/left-arrow.png" id="left-arrow">
+		  </button>
+		  <button onclick="window.location.href='../../index.html'">
+			  <img src="../img/home.png" id="home-img" >
+		  </button>
+		  <button onclick="window.location.href='../intrus/intrus.html'">
+			  <img src="../img/right-arrow.png" id="right-arrow">
+		  </button>
+	  </nav>
+
+<div class="joueurs">
+	<button class="btn joueur" id="papa">
+		<span>Tous</span>
+	</button>
+	<button class="btn joueur" id="maman">
+		<span>Amatxo</span>
+	</button>
+	<button class="btn joueur" id="sam">
+		<span>Sam</span>
+	</button>
+	<button class="btn joueur" id="aitor">
+		<span>Aitor</span>
+	</button>
+	<button class="btn joueur" id="zaz">
+		<span>Yaëlle</span>
+	</button>
+
+</div>
+
+<table class="tableau">
+	<tr>
+		<td class="cellule" id="1" onclick="myFunction(this.id)">1</td>
+		<td class="cellule" id="2" onclick="myFunction(this.id)">2</td>
+		<td class="cellule" id="3" onclick="myFunction(this.id)">3</td>	
+		<td class="cellule" id="4" onclick="myFunction(this.id)">4</td>	
+		<td class="cellule" id="5" onclick="myFunction(this.id)">5</td>
+		<td class="cellule" id="6" onclick="myFunction(this.id)">6</td>
+		<td class="cellule" id="7" onclick="myFunction(this.id)">7</td>
+		<td class="cellule" id="8" onclick="myFunction(this.id)">8</td>
+		<td class="cellule" id="9" onclick="myFunction(this.id)">9</td>
+		<td class="cellule" id="10" onclick="myFunction(this.id)">10</td>
+	</tr>
+
+	<tr>
+	
+		<td class="cellule" id="11" onclick="myFunction(this.id)">11</td>
+		<td class="cellule" id="12" onclick="myFunction(this.id)">12</td>
+		<td class="cellule" id="13" onclick="myFunction(this.id)">13</td>
+		<td class="cellule" id="14" onclick="myFunction(this.id)">14</td>
+		<td class="cellule" id="15" onclick="myFunction(this.id)">15</td>	
+		<td class="cellule" id="16" onclick="myFunction(this.id)">16</td>
+		<td class="cellule" id="17" onclick="myFunction(this.id)">17</td>
+		<td class="cellule" id="18" onclick="myFunction(this.id)">18</td>
+		<td class="cellule" id="19" onclick="myFunction(this.id)">19</td>
+		<td class="cellule" id="20" onclick="myFunction(this.id)">20</td>
+	</tr>
+
+</table>
+
+<div class ="contenu_reponse">
+	<button class="btn bouton_reponse" value="Afficher la réponse" onclick="Afficher_reponse(this.id)">
+		<span>Afficher la réponse 1</span>
+	</button>
+</div>
+
+<div class="question_reponse">
+	<p id="question" class="question"> </p>
+	<p id="masquer" class="masquer"> </p>
+	<p id="reponse" class="reponse"> </p>
+</div>
+
+</body>
+	<script src="questions_indiv.js"></script>
+</html>
