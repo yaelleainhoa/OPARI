@@ -43,7 +43,7 @@ liste_images = [
 	"../photos/madrid.png",
 	"../photos/caracas.png",
 
-
+	"../photos/photos.png",
 
 	"../photos/fin.jpg",
 ]
@@ -86,7 +86,7 @@ liste_reponses = [
 	"Indiana",
 	"Madrid",
 	"Caracas",
-
+	"Tu regalo",
 
 ]
 
